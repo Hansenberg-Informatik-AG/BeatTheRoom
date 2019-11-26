@@ -1,2 +1,2 @@
 # Beat the room
-###Rätsel
+### Rätsel
