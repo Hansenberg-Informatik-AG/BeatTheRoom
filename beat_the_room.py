@@ -1,40 +1,62 @@
 import time
 from threading import Thread
-
 class Controller(object):
     def __init__(self):
         self.puzzles = []
-        self.active_puzzles = []
-
+        
+        import Puzzle1
+        import Puzzle2
+        #puzlle hier Importieren und zu der Liste hinzufügen
+        self.puzzles.append(Puzzle1.Puzzle1(self))
+        self.puzzles.append(Puzzle2.Puzzle2(self))
         self.hint_queue = []
+        self.run_thread = Thread(target=self.run_func)
+        print("init")
 
-    def run():
-        pass
+    def run_func(self):
+        
+        print("running")
+        print(self.puzzles)
+        self.puzzles[0].activated = True
+        while len(self.puzzles) > 0:
+            while not self.puzzles[0].solved:
+               pass
+            while self.puzzles[0].activated:
+                pass
+            self.puzzles.pop(0)
+            if len(self.puzzles) > 0:
+                self.puzzles[0].activated = True
+            print(str(len(self.puzzles)))
+        print("GEWONNEN!")
 
     def reset_timer(self):
         pass
 
     def deactivate(self, puzzle): # muss hinweis und puzzle entfernen
-        pass
+        self.puzzles.remove(puzzle)
+        for h in puzzle.hints:
+            self.hint_queue.remove(h)
 
     def activate(self, id):
-        pass
+        for p in puzzles:
+            if p.id == id:
+                active_puzzles.append(p)
+                p.activated = True
+                return
+    
 
 class Puzzle(object):
     def __init__(self, controller):
         self.id = None
         self.controller = controller
-
+        
         self.hints = []
-
-        self.activates_ids = []
 
         self.activated = False
         self.solved = False
 
         self.run_thread = Thread(target=self.run_thread_func)
         self.run_thread.start()
-
         self.interact_thread = Thread(target=self.interact)
 
     def run_thread_func(self):
@@ -43,17 +65,24 @@ class Puzzle(object):
         while not self.activated:
             pass
 
-        self.controller.active_puzzles.append(self)
         self.interact_thread.start()
 
+        timer = 0
+        next_hint = 0
+
         while not self.solved:
-            pass
-
-        self.controller.reset_timer()
-        self.controller.deactivate(sel)
-        for id in activates_ids:
-            self.controller.activate(id)
-
+            print("Not Solved" +str(timer))
+            #alle fünf Sekunden kommt ein Hinweis
+            if timer == 5:
+#fur jedes Rätsel muss es zwei Hinweise geben. Nach den nächsten funf Sekunden löst sich das Rätsel von alleinr
+                if next_hint == 2:
+                    self.solved = True
+                self.hints[next_hint].show()
+                timer = 0
+                next_hint = next_hint + 1
+            timer = timer +1
+            time.sleep(1)
+        self.activated = False
         self.deinit()
 
     def init(self):
@@ -70,3 +99,12 @@ class Hint(object):
     def __init__(self, puzzle, file):
         self.puzzle = puzzle
         self.file = file
+    def show(self):
+#implemtierung von filmabspielen muss noch hinzugefügt werden
+        print("showing hint "+str(self.file))
+def make_hint(puzzle, file):
+    return Hint(puzzle,file)
+
+if __name__ == "__main__":
+    Controller().run_thread.start()
+
