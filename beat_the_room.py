@@ -5,10 +5,9 @@ class Controller(object):
         self.puzzles = []
         
         import Puzzle1
-        import Puzzle2
         #puzlle hier Importieren und zu der Liste hinzufügen
+#die Reihenfolge hier ist auch die Reihenfolge der Puzzle!
         self.puzzles.append(Puzzle1.Puzzle1(self))
-        self.puzzles.append(Puzzle2.Puzzle2(self))
         self.hint_queue = []
         self.run_thread = Thread(target=self.run_func)
         print("init")
