@@ -11,7 +11,7 @@ class Controller(object):
         self.hint_queue = []
         self.run_thread = Thread(target=self.run_func)
         print("init")
-
+        
     def run_func(self):
         
         print("running")
@@ -20,8 +20,6 @@ class Controller(object):
         while len(self.puzzles) > 0:
             while not self.puzzles[0].solved:
                pass
-            while self.puzzles[0].activated:
-                pass
             self.puzzles.pop(0)
             if len(self.puzzles) > 0:
                 self.puzzles[0].activated = True
@@ -36,12 +34,14 @@ class Controller(object):
         for h in puzzle.hints:
             self.hint_queue.remove(h)
 
+    ''' Multithreading:
     def activate(self, id):
         for p in puzzles:
             if p.id == id:
                 active_puzzles.append(p)
                 p.activated = True
                 return
+                '''
     
 
 class Puzzle(object):
@@ -81,7 +81,6 @@ class Puzzle(object):
                 next_hint = next_hint + 1
             timer = timer +1
             time.sleep(1)
-        self.activated = False
         self.deinit()
 
     def init(self):
@@ -106,4 +105,3 @@ def make_hint(puzzle, file):
 
 if __name__ == "__main__":
     Controller().run_thread.start()
-
