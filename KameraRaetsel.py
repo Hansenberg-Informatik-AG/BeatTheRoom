@@ -16,19 +16,15 @@ class KameraRaetsel(Puzzle):
 
 #währenddessen soll livecam mitlaufen
 
-    def interact(self): 
-        while self.rc_time>10:      
-            pass 
-        self.solved=true
-        
-    def rc_time(self):
+    def interact(self):
         count = 0
-
-        while (GPIO.input(self.pin_to_circuit) == GPIO.LOW):
+        while count < 20:
+            if True: #bin ich dunkel? TODO
+                count+=1
+            else:
+                count = 1
             time.sleep(0.1)
-            count += 1
-
-        return count
+        self.solved=True
 
     def deinit(self):
         GPIO.cleanup()
