@@ -8,6 +8,15 @@ class Puzzle1(beat_the_room.Puzzle):
     def init(self):
         #hinweis filmdatei
         # die Rätsel sind linear
+        #Rätsel:
+        #1 Schlüsseldrehen und anlassen. Die Zeit läuft wenn das erste Rätsel beendet ist
+        #2 Überwachung zu Verdunklung. Kamera an -> geringer Lichteinfall
+        #3 Radio FM LichtHinweis. Radio -> HEX Eingabe
+        #4 Protokol zu Penny
+        #5 Ubrella bis Klicker Eingabe
+        
+        
+        
         self.hints = [beat_the_room.make_hint(self, "test.avi"),beat_the_room.make_hint(self,"hinweis2.avi")]
         #self.id = 42
         #print("Init(42)")
