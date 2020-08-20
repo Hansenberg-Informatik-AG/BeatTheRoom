@@ -39,7 +39,6 @@ class KameraRaetsel(Puzzle):
                 brightTotal = 0
                 for x in range(0, width, 16):
                     for y in range(0, height, 16):
-                        y += 16
                         cnt += 1
                         rgb = pix[x, y]
                         R = rgb[0]
