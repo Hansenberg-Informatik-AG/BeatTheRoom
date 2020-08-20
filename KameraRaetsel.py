@@ -32,7 +32,7 @@ class KameraRaetsel(Puzzle):
                 camera.capture('/home/pi/Desktop/image%s.jpg' % count)
                 i = Image.open('/home/pi/Desktop/image%s.jpg' % count)
                 pix = i.load()
-                width, height = pix.size
+                width, height = i.size
                 cnt = 0
                 for x in width:
                     for y in height:
