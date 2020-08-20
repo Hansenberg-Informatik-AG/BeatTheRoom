@@ -34,11 +34,22 @@ class KameraRaetsel(Puzzle):
                 i = Image.open('/home/pi/Desktop/image%s.jpg' % count)
                 pix = i.load()
                 width, height = i.size
+                # Anzahl der Pixel
                 cnt = 0
+                # SUmme der Helligkeiten der Pixel um die Helligkeit rauszufinden
+                brightTotal = 0
                 for x in range(width):
                     for y in range(height):
                         cnt += 1
-                        print(pix[x, y])
+                        rgb = pix[x, y]
+                        R = rgb[0]
+                        G = rgb[1]
+                        B = rgb[2]
+                        Y = 0.375 * R + 0.5 * G + 0.125 * B
+                        brightTotal += Y
+                print(brightTotal+"Brightness")
+                print(cnt+"cnt")
+                print(brightTotal/cnt + "Average")
                 count = 1
             time.sleep(5)
         self.solved = True
