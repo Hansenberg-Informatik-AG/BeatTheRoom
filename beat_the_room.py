@@ -5,8 +5,12 @@ class Controller(object):
         self.puzzles = []
         
         import Puzzle1
+        import SchluessekRaetsel
+        import KameraRaetsel
         #puzlle hier Importieren und zu der Liste hinzufügen
 #die Reihenfolge hier ist auch die Reihenfolge der Puzzle!
+        self.puzzles.append(SchluessekRaetsel.SchluesselRaetsel(self))
+        self.puzzles.append(KameraRaetsel.KameraRaetsel(self))
         self.puzzles.append(Puzzle1.Puzzle1(self))
         self.hint_queue = []
         self.run_thread = Thread(target=self.run_func)
@@ -59,11 +63,11 @@ class Puzzle(object):
         self.interact_thread = Thread(target=self.interact)
 
     def run_thread_func(self):
-        self.init()
+
 
         while not self.activated:
             pass
-
+        self.init()
         self.interact_thread.start()
 
         timer = 0
@@ -72,7 +76,7 @@ class Puzzle(object):
         while not self.solved:
             print("Not Solved" +str(timer))
             #alle fünf Sekunden kommt ein Hinweis
-            if timer == 5:
+            if timer == 60:
 #fur jedes Rätsel muss es zwei Hinweise geben. Nach den nächsten funf Sekunden löst sich das Rätsel von alleinr
                 if next_hint == 2:
                     self.solved = True
