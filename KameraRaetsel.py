@@ -34,8 +34,8 @@ class KameraRaetsel(Puzzle):
                 pix = i.load()
                 width, height = i.size
                 cnt = 0
-                for x in width:
-                    for y in height:
+                for x in range(width):
+                    for y in range(height):
                         cnt += 1
                         print(pix[x][y])
                 count = 1
