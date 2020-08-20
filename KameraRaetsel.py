@@ -37,9 +37,8 @@ class KameraRaetsel(Puzzle):
                 cnt = 0
                 # SUmme der Helligkeiten der Pixel um die Helligkeit rauszufinden
                 brightTotal = 0
-                for x in range(width/16):
-                    x += 16
-                    for y in range(height/16):
+                for x in range(0, width, 16):
+                    for y in range(0, height, 16):
                         y += 16
                         cnt += 1
                         rgb = pix[x, y]
