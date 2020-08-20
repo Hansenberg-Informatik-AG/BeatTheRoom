@@ -2,6 +2,7 @@ from beat_the_room import Puzzle
 import RPi.GPIO as GPIO
 import time
 from picamera import PiCamera
+from PIL import Image
 
 
 class KameraRaetsel(Puzzle):
@@ -29,6 +30,14 @@ class KameraRaetsel(Puzzle):
                 count += 1
             else:
                 camera.capture('/home/pi/Desktop/image%s.jpg' % count)
+                i = Image.open('/home/pi/Desktop/image%s.jpg' % count)
+                pix = i.load()
+                width, height = pix.size
+                cnt = 0
+                for x in width:
+                    for y in height:
+                        cnt += 1
+                        print(pix[x][y])
                 count = 1
             time.sleep(5)
         self.solved = True
