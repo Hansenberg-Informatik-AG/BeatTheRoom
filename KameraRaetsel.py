@@ -46,6 +46,7 @@ class KameraRaetsel(Puzzle):
                         B = rgb[2]
                         Y = 0.375 * R + 0.5 * G + 0.125 * B
                         brightTotal += Y
+                print(str(brightTotal/cnt)+"Average")
                 self.solved = brightTotal/cnt < 35
                 count = 1
             time.sleep(5)
