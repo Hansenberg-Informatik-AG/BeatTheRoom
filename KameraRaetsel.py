@@ -20,6 +20,7 @@ class KameraRaetsel(Puzzle):
 
 # währenddessen soll livecam mitlaufen
 
+
     def interact(self):
         dark = False
         camera.start_preview()
@@ -32,6 +33,7 @@ class KameraRaetsel(Puzzle):
                 camera.capture('/home/pi/Desktop/image%s.jpg' % count)
                 i = Image.open('/home/pi/Desktop/image%s.jpg' % count)
                 pix = i.load()
+                pix[0::16, 0::16]
                 width, height = i.size
                 # Anzahl der Pixel
                 cnt = 0
