@@ -24,7 +24,7 @@ class KameraRaetsel(Puzzle):
         dark = False
         camera.start_preview()
         count = 0
-        while True:
+        while not solved:
             if dark:  # bin ich dunkel? TODO
 
                 count += 1
