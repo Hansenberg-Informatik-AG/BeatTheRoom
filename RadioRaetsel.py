@@ -3,6 +3,8 @@ import RPi.GPIO as gpio
 import time
 import beat_the_room.Puzzle
 
+# Puzzle: 
+# Hear Radio and type the heard HEX code 
 class Puzzle1(beat_the_room.Puzzle):
 
     def init(self):
