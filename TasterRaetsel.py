@@ -1,13 +1,20 @@
 
 from beat_the_room import Puzzle
 import RPi.GPIO as GPIO
-
+import time
 
 class TasterRaetsel(beat_the_room.Puzzle):
 
     #gpios initialisieren
     def init(self):
         GPIO.setmode(GPIO.BCM)
+
+        pins = ""
+        for i in range(4):
+            pins += str(self.pins[i])+", "
+        print("init(" + pins + ")")
+        
+        self.id = 0 #platzhalter
         self.ports = [17,18,27,22]
         self.states = [False for i in range(4)]
         self.clickCounts = [0 for i in range(4)]
@@ -28,9 +35,14 @@ class TasterRaetsel(beat_the_room.Puzzle):
                     self.currentPin = 0
                     self.clickCounts = [0 for i in range(4)]
                     self.click()
+            time.sleep(0.05)
 
     def deinit(self):
-        pass
+        pins = ""
+        for i in range(4):
+            pins += str(self.pins[i])+", "
+        print("deinitialising(" + pins + ")")
+        GPIO.cleanup()
 
     def click(self):
         self.clickCounts[self.currentPin] += 1
