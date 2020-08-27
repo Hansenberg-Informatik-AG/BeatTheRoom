@@ -4,7 +4,8 @@ import time
 from picamera import PiCamera
 from PIL import Image
 
-
+# Puzzle: 
+# Make camera dark (hold hand right in front of it)
 class KameraRaetsel(Puzzle):
     def init(self):
         print('init')

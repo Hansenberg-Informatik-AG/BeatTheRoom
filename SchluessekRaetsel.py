@@ -2,7 +2,8 @@ import time
 import beat_the_room
 import RPi.GPIO as GPIO
 
-
+# Puzzle: 
+# Change The key's position (on - off or off - on)
 class SchluesselRaetsel(beat_the_room.Puzzle):
 
     def init(self):
