@@ -3,7 +3,9 @@ import RPi.GPIO as gpio
 import time
 import beat_the_room.Puzzle
 
-class Puzzle1(beat_the_room.Puzzle):
+import fm
+
+class RadioPuzzle(beat_the_room.Puzzle):
 
     def init(self):
         #hinweis filmdatei
@@ -13,13 +15,12 @@ class Puzzle1(beat_the_room.Puzzle):
         #2 Überwachung zu Verdunklung. Kamera an -> geringer Lichteinfall
         #3 Radio FM LichtHinweis. Radio -> HEX Eingabe
         #4 Protokol zu Penny
-        #5 Ubrella bis Klicker Eingabe
+        #5 Umbrella bis Klicker Eingabe
         
         
         
         self.hints = [beat_the_room.make_hint(self, "test.avi"),beat_the_room.make_hint(self,"hinweis2.avi")]
-        #self.id = 42
-        #print("Init(42)")
+        print("Init(Radio)")
 
 
         gpio.setmode(gpio.BCM)
@@ -39,7 +40,8 @@ class Puzzle1(beat_the_room.Puzzle):
         for i in range(len(zeile)):
             gpio.setup(zeile[i], gpio.IN, pull_up_down = gpio.PUD_UP)
 
-        #INITIALISIERE SENSOREN / HARDWARE
+        fm.start_radio()
+
         
     def interact(self):
         print("interacting(42)")
@@ -56,13 +58,10 @@ class Puzzle1(beat_the_room.Puzzle):
                             pass
                         return benutzerEingabe                  
                 gpio.output(spalte[j], 1)
-        #time.sleep(10)
-        #sobald diese variable gesetzt ist, ist das Rätsel fertig! Hier muss wahrscheinlich immer eine while Schleife rein!
         self.solved = True
-        print("Fertig(42)")
+        print("Fertig(Radio)")
 
     def deinit(self):
-        print("deinitlasing(42)")
-        #DEINITIALISIERE SENSOREN / HARDWARE
-        #GPIO.cleanup() etc.
+        fm.terminate()
+        print("deinitlasing(Radio)")
 
