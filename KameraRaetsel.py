@@ -35,7 +35,7 @@ class KameraRaetsel(Puzzle):
                 width, height = i.size
                 # Anzahl der Pixel
                 cnt = 0
-                # SUmme der Helligkeiten der Pixel um die Helligkeit rauszufinden
+                # Summe der Helligkeiten der Pixel um die Helligkeit rauszufinden
                 brightTotal = 0
                 for x in range(0, width, 16):
                     for y in range(0, height, 16):
@@ -47,7 +47,7 @@ class KameraRaetsel(Puzzle):
                         Y = 0.375 * R + 0.5 * G + 0.125 * B
                         brightTotal += Y
                 print(str(brightTotal/cnt)+"Average")
-                self.solved = brightTotal/cnt < 35
+                self.solved = (brightTotal/cnt) < 35
                 count = 1
             time.sleep(5)
         self.solved = True
