@@ -2,6 +2,16 @@
 
 ### Rätsel
 
+1. Schlüssel umdrehen
+2. Überwachung zu Verdunklung
+   Die Kamera des Pi's wird aktiviert und wartet auf geringen Lichteinfall. Sobald beispielsweise die Hand vor die Kamera gelegt wird, beginnt das dritte Rätsel
+3. Radio FM LichtHinweis.
+   Radio wird gespielt; die interact-Methode wartet auf die HEX Eingabe
+4. Protokol zu Penny
+5. Ubrella bis Klicker Eingabe
+
+## Basic Rätsel-Klasse
+
 Jedes Rätsel besteht aus:
 
 #### Einer Init-Methode:
