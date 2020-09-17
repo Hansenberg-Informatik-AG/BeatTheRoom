@@ -46,7 +46,7 @@ class Puzzle1(beat_the_room.Puzzle):
         GPIO.cleanup()
 
 
-test = False
+test = True
 if test:
     Puzzle2 = Puzzle1()
     Puzzle2.init()
