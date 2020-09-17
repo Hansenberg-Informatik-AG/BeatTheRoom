@@ -16,8 +16,7 @@ class Puzzle1(beat_the_room.Puzzle):
         # INITIALISIERE SENSOREN / HARDWARE
         global GPIO_PIN
         GPIO_PIN = 15
-        global counter
-        counter = 0
+        self.counter = 0
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(GPIO_PIN, GPIO.IN)
 
@@ -34,10 +33,10 @@ class Puzzle1(beat_the_room.Puzzle):
 
     def lösen(self, null):
         print("Klopfen")
-        counter = counter+1
-        if counter == 9:
+        self.counter +=1
+        if self.counter == 9:
             self.lösen = True
-        if counter%3==0:
+        if self.counter%3==0:
             sleep(1000)
 
     def deinit(self):
