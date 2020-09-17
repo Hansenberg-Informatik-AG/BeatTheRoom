@@ -45,9 +45,9 @@ class Puzzle1(beat_the_room.Puzzle):
 
 test = True
 if test:
-    Puzzle1 = Puzzle1()
-    Puzzle1.init()
+    Puzzle2 = Puzzle1()
+    Puzzle2.init()
     time.sleep(1)
-    Puzzle1.interact()
+    Puzzle2.interact()
     print("succsess")
-    Puzzle1.deinit()
+    Puzzle2.deinit()

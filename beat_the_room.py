@@ -1,29 +1,31 @@
 import time
 from threading import Thread
+import subprocess
+
+
 class Controller(object):
     def __init__(self):
         self.puzzles = []
-        
+
         import Puzzle1
         import SchluessekRaetsel
         import KameraRaetsel
-        #puzlle hier Importieren und zu der Liste hinzufügen
-#die Reihenfolge hier ist auch die Reihenfolge der Puzzle!
-        self.puzzles.append(SchluessekRaetsel.SchluesselRaetsel(self))
-        self.puzzles.append(KameraRaetsel.KameraRaetsel(self))
-        self.puzzles.append(Puzzle1.Puzzle1(self))
+        # puzlle hier Importieren und zu der Liste hinzufügen
+# die Reihenfolge hier ist auch die Reihenfolge der Puzzle!
+        self.puzzles.append(SchluessekRaetsel.SchluesselRaetsel())
+        self.puzzles.append(KameraRaetsel.KameraRaetsel())
+        self.puzzles.append(Puzzle1.Puzzle1())
         self.hint_queue = []
         self.run_thread = Thread(target=self.run_func)
-        print("init")
-        
+
     def run_func(self):
-        
+
         print("running")
         print(self.puzzles)
         self.puzzles[0].activated = True
         while len(self.puzzles) > 0:
             while not self.puzzles[0].solved:
-               pass
+                pass
             self.puzzles.pop(0)
             if len(self.puzzles) > 0:
                 self.puzzles[0].activated = True
@@ -33,7 +35,7 @@ class Controller(object):
     def reset_timer(self):
         pass
 
-    def deactivate(self, puzzle): # muss hinweis und puzzle entfernen
+    def deactivate(self, puzzle):  # muss hinweis und puzzle entfernen
         self.puzzles.remove(puzzle)
         for h in puzzle.hints:
             self.hint_queue.remove(h)
@@ -46,13 +48,13 @@ class Controller(object):
                 p.activated = True
                 return
                 '''
-    
+
 
 class Puzzle(object):
-    def __init__(self, controller):
+    def __init__(self):
         self.id = None
-        self.controller = controller
-        
+        self.controller = "test"
+
         self.hints = []
 
         self.activated = False
@@ -64,7 +66,6 @@ class Puzzle(object):
 
     def run_thread_func(self):
 
-
         while not self.activated:
             pass
         self.init()
@@ -74,16 +75,16 @@ class Puzzle(object):
         next_hint = 0
 
         while not self.solved:
-            print("Not Solved" +str(timer))
-            #alle fünf Sekunden kommt ein Hinweis
+            print("Not Solved" + str(timer))
+            # alle fünf Sekunden kommt ein Hinweis
             if timer == 60:
-#fur jedes Rätsel muss es zwei Hinweise geben. Nach den nächsten funf Sekunden löst sich das Rätsel von alleinr
+                # fur jedes Rätsel muss es zwei Hinweise geben. Nach den nächsten funf Sekunden löst sich das Rätsel von alleinr
                 if next_hint == 2:
                     self.solved = True
                 self.hints[next_hint].show()
                 timer = 0
                 next_hint = next_hint + 1
-            timer = timer +1
+            timer = timer + 1
             time.sleep(1)
         self.deinit()
 
@@ -101,11 +102,16 @@ class Hint(object):
     def __init__(self, puzzle, file):
         self.puzzle = puzzle
         self.file = file
+
     def show(self):
-#implemtierung von filmabspielen muss noch hinzugefügt werden
+        # implemtierung von filmabspielen muss noch hinzugefügt werden
+        subprocess.Popen()
         print("showing hint "+str(self.file))
+
+
 def make_hint(puzzle, file):
-    return Hint(puzzle,file)
+    return Hint(puzzle, file)
+
 
 if __name__ == "__main__":
     Controller().run_thread.start()
