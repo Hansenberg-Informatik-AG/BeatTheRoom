@@ -32,7 +32,7 @@ class Puzzle1(beat_the_room.Puzzle):
 
         print("Fertig(15)")
 
-    def lösen(null):
+    def lösen(self, null):
         print("Klopfen")
         counter = counter+1
         if counter == 9:
