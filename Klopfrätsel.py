@@ -33,6 +33,7 @@ class Puzzle1(beat_the_room.Puzzle):
         print("Fertig(42)")
 
     def lösen(self):
+        print("Klopfen")
         counter = counter+1
         if counter == 9:
             self.lösen = True
