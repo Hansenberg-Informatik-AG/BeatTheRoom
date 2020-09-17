@@ -37,6 +37,8 @@ class Puzzle1(beat_the_room.Puzzle):
         counter = counter+1
         if counter == 9:
             self.lösen = True
+        if counter%3==0:
+            sleep(1000)
 
     def deinit(self):
         print("deinitlasing(42)")
