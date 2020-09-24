@@ -19,7 +19,7 @@ class Puzzle1(beat_the_room.Puzzle):
         self.counter = 0
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(GPIO_PIN, GPIO.IN)
-        self.timing
+        self.timing = null
 
     def interact(self):
         print("interacting(15)")
