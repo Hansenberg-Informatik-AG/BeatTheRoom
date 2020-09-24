@@ -51,7 +51,7 @@ class Puzzle1(beat_the_room.Puzzle):
             self.lösen = True
         if self.counter%3==0:
             time.sleep(0)
-            print(Whoho wir haben ein Ergebnis!)
+            print("Whoho wir haben ein Ergebnis!")
 
     def deinit(self):
         print("deinitlasing(15)")
