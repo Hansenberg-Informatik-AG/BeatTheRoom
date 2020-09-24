@@ -36,23 +36,24 @@ class Puzzle1(beat_the_room.Puzzle):
         print("Klopfen")
         print(self.counter)
         print(time.perf_counter()-self.timing)
-        if self.timing == 0:
-           self.timing = time.perf_counter()
-           self.counter +=1
-        elif self.counter%3==0:
-           if time.perf_counter() - self.timing > 1 and time.perf_counter() - self.timing < 5:
-                self.timing = time.perf_counter()
-                self.counter +=1
-           else:
-                self.timing = 0
-                self.counter = 0
-        else:
+        if self.timing != 0 and self.counter%3!= 0:
            if time.perf_counter() - self.timing < 1.5:
                 self.timing = time.perf_counter()
                 self.counter +=1
            else:
                 self.timing = 0
                 self.counter = 0
+        elif self.timing == 0:
+           self.timing = time.perf_counter()
+           self.counter +=1
+        else:
+           if time.perf_counter() - self.timing > 1 and time.perf_counter() - self.timing < 5:
+                self.timing = time.perf_counter()
+                self.counter +=1
+           else:
+                self.timing = 0
+                self.counter = 0
+        
                 
         if self.counter == 9:
             print("Successse!")
