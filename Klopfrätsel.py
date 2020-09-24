@@ -35,7 +35,7 @@ class Puzzle1(beat_the_room.Puzzle):
     def lösen(self, null):
         print("Klopfen")
         print(self.counter)
-        print(self.timing - time.perf_cunter())
+        print(self.timing - time.perf_counter())
         if self.timing == 0:
            self.timing = time.perf_counter()
            self.counter +=1
