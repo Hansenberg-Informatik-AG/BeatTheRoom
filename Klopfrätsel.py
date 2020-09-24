@@ -24,7 +24,7 @@ class Puzzle1(beat_the_room.Puzzle):
     def interact(self):
         print("interacting(15)")
         GPIO.add_event_detect(GPIO_PIN, GPIO.FALLING,
-                              callback=self.lösen, bouncetime=100)
+                              callback=self.lösen, bouncetime=50)
         # time.sleep(10)
         # sobald diese variable gesetzt ist, ist das Rätsel fertig! Hier muss wahrscheinlich immer eine while Schleife rein!
         while self.solved == False:
@@ -47,7 +47,7 @@ class Puzzle1(beat_the_room.Puzzle):
                 self.timing = 0
                 self.counter = 0
         else:
-           if time.perf_counter() - self.timing < 1:
+           if time.perf_counter() - self.timing < 1.5:
                 self.timing = time.perf_counter()
                 self.counter +=1
            else:
