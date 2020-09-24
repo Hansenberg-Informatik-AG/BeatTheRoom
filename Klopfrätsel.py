@@ -19,7 +19,7 @@ class Puzzle1(beat_the_room.Puzzle):
         self.counter = 0
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(GPIO_PIN, GPIO.IN)
-        self.timing = null
+        self.timing = 0
 
     def interact(self):
         print("interacting(15)")
@@ -36,7 +36,7 @@ class Puzzle1(beat_the_room.Puzzle):
         print("Klopfen")
         print(self.counter)
         print(self.timing - time.perf_cunter())
-        if self.timing ==null :
+        if self.timing == 0:
            self.timing = time.perf_counter()
            self.counter +=1
         else:
@@ -44,7 +44,7 @@ class Puzzle1(beat_the_room.Puzzle):
                 self.timing = time.perf_counter()
                 self.counter +=1
            else:
-                self.timing = null
+                self.timing = 0
                 self.counter = 0
                 
         if self.counter == 9:
