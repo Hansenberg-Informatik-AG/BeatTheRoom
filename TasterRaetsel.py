@@ -1,5 +1,5 @@
 
-from beat_the_room import Puzzle
+import beat_the_room 
 import RPi.GPIO as GPIO
 import time
 
@@ -53,6 +53,7 @@ class TasterRaetsel(beat_the_room.Puzzle):
 
     def checkClicks(self):
         for i in range(4):
+            print(GPIO.input(ports[i]))
             if GPIO.input(self.ports[i]):
                 if not self.states[i]:
                     self.state[i] = True
