@@ -40,7 +40,7 @@ class Puzzle1(beat_the_room.Puzzle):
            self.timing = time.perf_counter()
            self.counter +=1
         elif self.counter%3==0:
-            if time.perf_counter() - self.timing > 1 and time.perf_counter() - self.timing < 5:
+           if time.perf_counter() - self.timing > 1 and time.perf_counter() - self.timing < 5:
                 self.timing = time.perf_counter()
                 self.counter +=1
            else:
