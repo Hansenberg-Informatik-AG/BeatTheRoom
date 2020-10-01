@@ -37,7 +37,7 @@ class Puzzle1(beat_the_room.Puzzle):
     def lösen(self, null):
 
         if self.timing != 0 and self.counter%3!= 0:
-           if time.perf_counter() - self.timing < 1.5:
+           if time.perf_counter() - self.timing < 1:
                 self.timing = time.perf_counter()
                 self.counter +=1
            else:
@@ -47,7 +47,7 @@ class Puzzle1(beat_the_room.Puzzle):
            self.timing = time.perf_counter()
            self.counter +=1
         else:
-           if time.perf_counter() - self.timing > 1 and time.perf_counter() - self.timing < 5:
+           if time.perf_counter() - self.timing > 1 and time.perf_counter() - self.timing < 3:
                 self.timing = time.perf_counter()
                 self.counter +=1
            else:
