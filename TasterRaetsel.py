@@ -6,7 +6,18 @@ import time
 class TasterRaetsel(beat_the_room.Puzzle):
 
     #gpios initialisieren
-    def init(self):
+    def __init__(self, controller):
+        self.id = None
+        self.controller = controller
+        
+        self.hints = []
+
+        self.activated = False
+        self.solved = False
+
+        self.run_thread = Thread(target=self.run_thread_func)
+        self.run_thread.start()
+        self.interact_thread = Thread(target=self.interact)
         GPIO.setmode(GPIO.BCM)
 
         pins = ""
