@@ -42,7 +42,7 @@ class TasterRaetsel(beat_the_room.Puzzle):
     def deinit(self):
         pins = ""
         for i in range(4):
-            pins += str(self.pins[i])+", "
+            pins += str(self.ports[i])+", "
         print("deinitialising(" + pins + ")")
         GPIO.cleanup()
 
