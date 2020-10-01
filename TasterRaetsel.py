@@ -13,7 +13,7 @@ class TasterRaetsel(beat_the_room.Puzzle):
 
         pins = ""
         for i in range(4):
-            pins += str(self.pins[i])+", "
+            pins += str(self.ports[i])+", "
         print("init(" + pins + ")")
         
         self.id = 0 #platzhalter
