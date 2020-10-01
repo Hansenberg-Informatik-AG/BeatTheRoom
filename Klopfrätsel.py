@@ -29,7 +29,7 @@ class Puzzle1(beat_the_room.Puzzle):
         # sobald diese variable gesetzt ist, ist das Rätsel fertig! Hier muss wahrscheinlich immer eine while Schleife rein!
         while self.solved == False:
             time.sleep(1)
-            if self.counter >= 9
+            if self.counter >= 9:
                 self.solved = true
 
         print("Fertig(15)")
