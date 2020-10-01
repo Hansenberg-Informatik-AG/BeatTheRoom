@@ -14,6 +14,8 @@ class TasterRaetsel(beat_the_room.Puzzle):
         
         self.id = 0 #platzhalter
         self.ports = [17,18,27,22]
+        for i in range(4):
+            GPIO.setup(self.ports[i], GPIO.out)
         self.states = [False for i in range(4)]
         self.clickCounts = [0 for i in range(4)]
         self.currentPin = 0
