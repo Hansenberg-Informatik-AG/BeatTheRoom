@@ -6,7 +6,7 @@ import time
 class TasterRaetsel(beat_the_room.Puzzle):
 
     #gpios initialisieren
-    def __init__(self, controller):
+    def init(self, controller):
         self.id = None
         
         GPIO.setmode(GPIO.BCM)
