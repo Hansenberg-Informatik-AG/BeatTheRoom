@@ -11,10 +11,6 @@ class TasterRaetsel(beat_the_room.Puzzle):
         
         GPIO.setmode(GPIO.BCM)
 
-        pins = ""
-        for i in range(4):
-            pins += str(self.ports[i])+", "
-        print("init(" + pins + ")")
         
         self.id = 0 #platzhalter
         self.ports = [17,18,27,22]
@@ -22,6 +18,12 @@ class TasterRaetsel(beat_the_room.Puzzle):
         self.clickCounts = [0 for i in range(4)]
         self.currentPin = 0
         self.key = [3,5,3,1]
+
+        
+        pins = ""
+        for i in range(4):
+            pins += str(self.ports[i])+", "
+        print("init(" + pins + ")")
         #reservier mal paar pins
 
     def interact(self):
