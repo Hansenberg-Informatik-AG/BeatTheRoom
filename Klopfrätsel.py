@@ -33,9 +33,7 @@ class Puzzle1(beat_the_room.Puzzle):
         print("Fertig(15)")
 
     def lösen(self, null):
-        print("Klopfen")
-        print(self.counter)
-        print(time.perf_counter()-self.timing)
+
         if self.timing != 0 and self.counter%3!= 0:
            if time.perf_counter() - self.timing < 1.5:
                 self.timing = time.perf_counter()
@@ -61,6 +59,10 @@ class Puzzle1(beat_the_room.Puzzle):
         if self.counter%3==0:
             time.sleep(0)
             print("Whoho wir haben ein Ergebnis!")
+        
+        #print("Klopfen")
+        print(self.counter)
+        print(time.perf_counter()-self.timing)
 
     def deinit(self):
         print("deinitlasing(15)")
