@@ -24,7 +24,7 @@ class TasterRaetsel(beat_the_room.Puzzle):
 
     def interact(self):
         while not self.solved:
-            pin = checkClicks()
+            pin = self.checkClicks()
             if pin != -1:
                 if pin == self.currentPin:
                     self.click()
