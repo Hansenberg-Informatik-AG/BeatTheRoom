@@ -53,9 +53,9 @@ class Puzzle1(beat_the_room.Puzzle):
                 self.counter = 0
         
                 
-        #if self.counter == 9:
+        if self.counter == 9:
            # print("Successse!")
-           # self.lösen = True
+            self.lösen = True
         #if self.counter%3==0:
             #time.sleep(0)
             #print("Whoho wir haben ein Ergebnis!")
