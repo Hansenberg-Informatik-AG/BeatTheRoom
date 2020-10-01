@@ -41,8 +41,8 @@ class Puzzle1(beat_the_room.Puzzle):
                 self.timing = time.perf_counter()
                 self.counter +=1
            else:
-                self.timing = 0
-                self.counter = 0
+                self.timing = time.perf_counter()
+                self.counter = 1
         elif self.timing == 0:
            self.timing = time.perf_counter()
            self.counter +=1
@@ -51,8 +51,8 @@ class Puzzle1(beat_the_room.Puzzle):
                 self.timing = time.perf_counter()
                 self.counter +=1
            else:
-                self.timing = 0
-                self.counter = 0
+                self.timing = time.perf_counter()
+                self.counter = 1
         
                 
        # if self.counter == 9:
