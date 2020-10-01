@@ -63,3 +63,9 @@ class TasterRaetsel(beat_the_room.Puzzle):
                 
                 
         return -1
+
+
+#test code for testing purposes
+
+temp = TasterRaetsel(None)
+temp.interact()
