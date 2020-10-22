@@ -10,11 +10,13 @@ class Controller(object):
         import Puzzle1
         import SchluessekRaetsel
         import KameraRaetsel
-        # puzlle hier Importieren und zu der Liste hinzufügen
+        import RadRaetsel
+        # puzlle hier Importieren und zu der Liste hinzufuegen
 # die Reihenfolge hier ist auch die Reihenfolge der Puzzle!
         self.puzzles.append(SchluessekRaetsel.SchluesselRaetsel())
         self.puzzles.append(KameraRaetsel.KameraRaetsel())
         self.puzzles.append(Puzzle1.Puzzle1())
+        self.puzzles.append(RadRaetsel.Puzzle42())
         self.hint_queue = []
         self.run_thread = Thread(target=self.run_func)
 
@@ -76,9 +78,9 @@ class Puzzle(object):
 
         while not self.solved:
             print("Not Solved" + str(timer))
-            # alle fünf Sekunden kommt ein Hinweis
+            # alle fuenf Sekunden kommt ein Hinweis
             if timer == 60:
-                # fur jedes Rätsel muss es zwei Hinweise geben. Nach den nächsten funf Sekunden löst sich das Rätsel von alleinr
+                # fur jedes Raetsel muss es zwei Hinweise geben. Nach den naechsten funf Sekunden loest sich das Raetsel von alleinr
                 if next_hint == 2:
                     self.solved = True
                 self.hints[next_hint].show()
@@ -104,7 +106,7 @@ class Hint(object):
         self.file = file
 
     def show(self):
-        # implemtierung von filmabspielen muss noch hinzugefügt werden
+        # implemtierung von filmabspielen muss noch hinzugefuegt werden
         subprocess.Popen()
         print("showing hint "+str(self.file))
 
