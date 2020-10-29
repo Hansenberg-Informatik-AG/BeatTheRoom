@@ -52,15 +52,15 @@ Gefahrenstufe wird erhöht.
 -	Sirene!?
 
 ### Rätsel 3: Radio
-	Gibt Geländecode (4028) aus
+-->	Gibt Geländecode (4028) aus
 #### Rätsel 4: Code ins Numbed eingeben
-	Screenshot der Webseite wird gezeigt (IP-Adresse)
+-->	Screenshot der Webseite wird gezeigt (IP-Adresse)
 ### Rätsel 5: Webseite (über hansenberg.info server)
 a.	IP-Adresse im Handy aufrufen, um auf Webseite zu gelangen
 b.	Screenshot sieht anders aus --- Fehler/Unterschiede suchen -> neues Rätsel?
 c.	Auf Webseite Benutzername und Passwort eingeben („hacken“)
 - Counter mit Fehlversuchen-Hinweis: können Sie lesen?
-	Führt zum Penny Video
+-->	Führt zum Penny Video
 ### Rätsel 6: Penny Klopfzeichen
 => Das Lösen öffnet ein Fach mit (weiteren Hinweisen, Rätseln…)
 > Überleitung zur Mail?
@@ -73,14 +73,14 @@ c.	Auf Webseite Benutzername und Passwort eingeben („hacken“)
 9)   Rätsel 9: Umbrella-Rätsel
        => wir erhalten einen Code für die Klicker
  
-Weitere Rätselideen, bisher offen:
+### Weitere Rätselideen, bisher offen:
 Schlussrätsel:
 Wo sitzt der unbekannte Hacker?
- Blatt/Album mit Bildern, die auf Städte/Länder verweisen
- Landkarte/Atlas => Koordinaten? Linien ziehen, Schnittpunkt?
+--> Blatt/Album mit Bildern, die auf Städte/Länder verweisen
+--> Landkarte/Atlas => Koordinaten? Linien ziehen, Schnittpunkt?
 
- falls Landkarte (Stadtnamen – an rote Aufkleber schreiben, die anzeigen, was man nicht anfassen soll – auch andersfarbige? Zur Verwirrung, nur Rot darf man nicht anfassen?) auf Stanley NFC-Sensor hinter dem Ort => Chip davorhalten = Stanley schaltet sich aus und wir haben gesiegt?!
-               extra Brett (mit Landkarte/Kabel (iwo verstecken)/dongel zum aktivieren  -uv-licht?) über VGA an Stanley… im Brett dann NFC-Chips verarbeiten
+--> falls Landkarte (Stadtnamen – an rote Aufkleber schreiben, die anzeigen, was man nicht anfassen soll – auch andersfarbige? Zur Verwirrung, nur Rot darf man nicht anfassen?) auf Stanley NFC-Sensor hinter dem Ort => Chip davorhalten = Stanley schaltet sich aus und wir haben gesiegt?!
+              --> extra Brett (mit Landkarte/Kabel (iwo verstecken)/dongel zum aktivieren  -uv-licht?) über VGA an Stanley… im Brett dann NFC-Chips verarbeiten
 
 Hinweis z.B. kryptisches Blatt in blauer Box sind Codes/Zahlen, die einem in einem Buch zu bestimmten Wörtern führen… -> ergebnis-wörter stellen Hinweis für neues Rätsel dar?
 
@@ -102,7 +102,7 @@ Y	youth
 
 
  
-Storyline IDEEN
+### Storyline IDEEN
 
 Anfangssituation?
 --zeitdruck erzeugen --- warum wollen wir heraus?
