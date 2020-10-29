@@ -10,7 +10,7 @@ class TasterRaetsel(beat_the_room.Puzzle):
         self.id = None
         
         GPIO.setmode(GPIO.BCM)
-        win = pygame.display_set_mode((720, 480))
+        win = pygame.display.set_mode((720, 480))
         
         self.id = 0 #platzhalter
         self.ports = [17,18,27,22]
