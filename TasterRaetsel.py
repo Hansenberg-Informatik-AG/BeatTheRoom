@@ -41,9 +41,10 @@ class TasterRaetsel(beat_the_room.Puzzle):
                     self.clickCounts = [0 for i in range(4)]
                     self.click()
             time.sleep(0.05)
-            if time.time() > schwubbeldibubbeldi + 10:
+            if time.time() > schwubbeldibubbeldi + 100:
                 if input() != "":
                     self.solved = True
+                    self.clickCounts = [0 for i in range(4)]
                 else:
                     schwubbeldibubbeldi = time.time()
 
@@ -57,23 +58,30 @@ class TasterRaetsel(beat_the_room.Puzzle):
 
     def click(self):
         self.clickCounts[self.currentPin] += 1
+        self.clickCounts[self.currentPin] = self.clickCounts[self.currentPin] % 10
         self.solved = self.isSolved()
 
     def isSolved(self):
         return self.clickCounts == self.key
 
     def checkClicks(self):
+        self.printStates()
         for i in range(4):
-            print(GPIO.input(self.ports[i]))
             if GPIO.input(self.ports[i]):
                 if not self.states[i]:
-                    self.state[i] = True
+                    self.states[i] = True
                     return i
             else:
                 self.states[i] = False
                 
                 
         return -1
+    def printStates(self):
+        for i in range(4):
+            print(self.clickCounts[i], end = "")
+            
+        print()
+        
 
 
 #test code for testing purposes
