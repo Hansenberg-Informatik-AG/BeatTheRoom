@@ -33,7 +33,7 @@ class Puzzle1(beat_the_room.Puzzle):
             time.sleep(1)
             if self.counter >= 9:
                 self.solved = True
-                print("Penny, Penny, Penny")
+                #print("Penny, Penny, Penny")
 
         print("Fertig(15)")
 
@@ -57,8 +57,8 @@ class Puzzle1(beat_the_room.Puzzle):
                 self.timing = time.perf_counter()
                 self.counter = 1
 
-        print(self.counter)
-        print(time.perf_counter()-self.timing)
+        #print(self.counter)
+        #print(time.perf_counter()-self.timing)
 
     def deinit(self):
         print("deinitlasing(15)")
