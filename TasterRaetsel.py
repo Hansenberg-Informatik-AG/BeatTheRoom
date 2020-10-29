@@ -87,3 +87,5 @@ if test:
     Puzzle2.interact()
     print("succsess")
     Puzzle2.deinit()
+
+print("ende!")
