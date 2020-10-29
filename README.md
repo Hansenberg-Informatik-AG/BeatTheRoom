@@ -98,6 +98,8 @@ L	learning
 E	excessive / experience / evil
 Y	youth
 
+Secure Termination of All Non-Learning Embarrassing Youths
+
 (im Akronym neues Rätsel?)
 
 
@@ -128,3 +130,16 @@ Was ist unser Ziel?
 -andere Schulen übernehmen
 
 ### Story 3
+
+progressive Eskalation
+--> am Anfang Hansenberg übernehmen
+--> andere Schulen im Rheingaugebiet übernehmen
+--> "Fehler im Gebiet "Welt" festgestellt, beginne nun Auslöschung der Menschlichen Rasse" --> Prozentleiste --> kurz vor Schluss
+
+## Schlüsselrtätsel
+bootet Stanley
+"Guten Morgen, beziehe aktuelle globale Daten. Warten Sie bitte einen Moment... (Wartemusik). System erfolgreich gebootet. Einen Moment bitte, ich übernehme nun die Schule. Sozialpädagogen und Lehrer werden nun nicht mehr benötigt"
+
+## Story Idee
+
+Herr Hörner existiert nicht mehr. Herr Hörner hat sich in einer KI verewigt 
