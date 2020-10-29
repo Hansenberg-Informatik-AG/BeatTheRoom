@@ -31,9 +31,9 @@ Hier werden alle in der Init-Methode initialisierten Sensoren etc. deinitialisie
 ### Story
 
 Story Konzept STANLEY
-Zu Beginn vorhanden: 
+### Zu Beginn vorhanden: 
 Lautsprecherbox, Sicherheitshinweispapier, Umbrella-Rechnung (im Fach?), Radio-Taschenlampe + Papier, Brett
-1)	Rätsel 1: Schlüssel
+### Rätsel 1: Schlüssel
 (verzerrte Roboterstimme von STANLEY zu hören) 
 Herzlich Willkommen an der ISH, der weltbesten KI überwachten Internatsschule
 Schloss Hansenberg, meinem Meisterwerk! Ich bin Stanley und dieser Bereich fällt mit sofortiger Wirkung unter meine Zuständigkeit. Ab sofort kehrt hier Disziplin ein!
@@ -42,7 +42,8 @@ Danke, dass Sie mich gebootet haben.
 Zur Prozessoptimierung werden Entlassungspapiere an alle Sozialpädagogen und Lehrer verschickt.
 -	rote LEDs?
 
-2)	Rätsel 2: Kamera
+
+### Rätsel 2: Kamera
 (Stimme STANLEY) 
 Visuelle Überwachung im Kontrollzentrum deaktiviert.
 Gefahrenquelle wurde entdeckt. 
@@ -50,22 +51,22 @@ Sicherheitssystem wird aktiviert.
 Gefahrenstufe wird erhöht.
 -	Sirene!?
 
-3)	Rätsel 3: Radio
+### Rätsel 3: Radio
 	Gibt Geländecode (4028) aus
-4)	Rätsel 4: Code ins Numbed eingeben
+#### Rätsel 4: Code ins Numbed eingeben
 	Screenshot der Webseite wird gezeigt (IP-Adresse)
-5)	Rätsel 5: Webseite (über hansenberg.info server)
+### Rätsel 5: Webseite (über hansenberg.info server)
 a.	IP-Adresse im Handy aufrufen, um auf Webseite zu gelangen
 b.	Screenshot sieht anders aus --- Fehler/Unterschiede suchen -> neues Rätsel?
 c.	Auf Webseite Benutzername und Passwort eingeben („hacken“)
 - Counter mit Fehlversuchen-Hinweis: können Sie lesen?
 	Führt zum Penny Video
-6)	Rätsel 6: Penny Klopfzeichen
+### Rätsel 6: Penny Klopfzeichen
 => Das Lösen öffnet ein Fach mit (weiteren Hinweisen, Rätseln…)
 > Überleitung zur Mail?
-7)	Rätsel 7: Mail an Frau von Zitzewitz schreiben
+### Rätsel 7: Mail an Frau von Zitzewitz schreiben
 => Automatische Antwort mit Rückverweis auf das Sicherheitsstufenblatt
-8)    Rätsel 8: Sicherheitsstufenblatt („schlecht gedruckt“ – muss auf bestimmte Art geknickt   werden)
+### Rätsel 8: Sicherheitsstufenblatt („schlecht gedruckt“ – muss auf bestimmte Art geknickt   werden)
        => entstandener augmented reality code auf Webseite scannen (vllt Verweis auf Umdrehen?)
 => Ausgabe eines 4-stelligen Zahlencodes für das Seitenfach mit einem Schlüssel
 => Schlüssel für Blaue Kassenbox => darin liegt der Ausweis (und UV-Lampe?)
