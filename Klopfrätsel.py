@@ -7,7 +7,8 @@ class Puzzle1(beat_the_room.Puzzle):
 
     def init(self):
         # Annika und Johann Versuch zum Klopfrätsel
-        # Sollte einmaliges Klopfen erkennen
+        # Sollte Penny Klopfen erkennen
+        # raspberrypi.local
         # hinweis filmdatei
         # die Rätsel sind linear
         self.hints = [beat_the_room.make_hint(
