@@ -1,8 +1,7 @@
 
 import beat_the_room 
 import RPi.GPIO as GPIO
-import time, pygame
-
+import time
 class TasterRaetsel(beat_the_room.Puzzle):
 
     #gpios initialisieren
@@ -10,7 +9,6 @@ class TasterRaetsel(beat_the_room.Puzzle):
         self.id = None
         
         GPIO.setmode(GPIO.BCM)
-        win = pygame.display.set_mode((720, 480))
         
         self.id = 0 #platzhalter
         self.ports = [17,18,27,22]
@@ -29,6 +27,7 @@ class TasterRaetsel(beat_the_room.Puzzle):
         #reservier mal paar pins
 
     def interact(self):
+        schwubbeldibubbeldi = time.time()
         while not self.solved:
             pin = self.checkClicks()
             if pin != -1:
@@ -42,10 +41,12 @@ class TasterRaetsel(beat_the_room.Puzzle):
                     self.clickCounts = [0 for i in range(4)]
                     self.click()
             time.sleep(0.05)
-            for event in pygame.event.get():
-                if event.type == pygame.KEYDOWN:
-                    if event.key == pygame.K_SPACE:
-                        self.solved = True
+            if time.time() > schwubbeldibubbeldi + 10:
+                if input() != "":
+                    self.solved = True
+                else:
+                    schwubbeldibubbeldi = time.time()
+
 
     def deinit(self):
         pins = ""
@@ -86,4 +87,3 @@ if test:
     Puzzle2.interact()
     print("succsess")
     Puzzle2.deinit()
-    pygame.quit()
