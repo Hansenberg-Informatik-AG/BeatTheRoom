@@ -32,6 +32,7 @@ class Puzzle1(beat_the_room.Puzzle):
             time.sleep(1)
             if self.counter >= 9:
                 self.solved = true
+                print("Penny, Penny, Penny")
 
         print("Fertig(15)")
 
@@ -54,16 +55,7 @@ class Puzzle1(beat_the_room.Puzzle):
            else:
                 self.timing = time.perf_counter()
                 self.counter = 1
-        
-                
-       # if self.counter == 9:
-           # print("Successse!")
-        #    self.lösen = True
-        #if self.counter%3==0:
-            #time.sleep(0)
-            #print("Whoho wir haben ein Ergebnis!")
-        
-        #print("Klopfen")
+
         print(self.counter)
         print(time.perf_counter()-self.timing)
 
