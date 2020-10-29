@@ -1,7 +1,7 @@
 
 import beat_the_room 
 import RPi.GPIO as GPIO
-import time
+import time, pygame
 
 class TasterRaetsel(beat_the_room.Puzzle):
 
@@ -10,7 +10,6 @@ class TasterRaetsel(beat_the_room.Puzzle):
         self.id = None
         
         GPIO.setmode(GPIO.BCM)
-
         
         self.id = 0 #platzhalter
         self.ports = [17,18,27,22]
@@ -42,6 +41,10 @@ class TasterRaetsel(beat_the_room.Puzzle):
                     self.clickCounts = [0 for i in range(4)]
                     self.click()
             time.sleep(0.05)
+            for event in pygame.event.get():
+                if event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_SPACE:
+                        self.solved = True
 
     def deinit(self):
         pins = ""
