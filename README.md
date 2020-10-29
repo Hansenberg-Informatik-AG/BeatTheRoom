@@ -28,7 +28,7 @@ Wenn das Rätsel gelöst wurde, wird die interact-Methode abgebrochen/beendet un
 Hier werden alle in der Init-Methode initialisierten Sensoren etc. deinitialisiert.
 
 
-### Story
+### Story 1
 
 Story Konzept STANLEY
 ### Zu Beginn vorhanden: 
@@ -102,7 +102,7 @@ Y	youth
 
 
  
-### Storyline IDEEN
+### Story 2
 
 Anfangssituation?
 --zeitdruck erzeugen --- warum wollen wir heraus?
@@ -126,3 +126,5 @@ Wer hilft uns?
 Was ist unser Ziel?
 
 -andere Schulen übernehmen
+
+### Story 3
