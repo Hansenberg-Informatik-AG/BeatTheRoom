@@ -105,7 +105,9 @@ class Hint(object):
 
     def show(self):
         # implemtierung von filmabspielen muss noch hinzugefügt werden
-        subprocess.Popen()
+        # argumente für omxplayer: -b -loop --no-osd
+        # killall omxplayer, nach ende des hinweises
+        subprocess.Popen("omxplayer",)
         print("showing hint "+str(self.file))
 
 
