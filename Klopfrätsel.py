@@ -31,7 +31,7 @@ class Puzzle1(beat_the_room.Puzzle):
         while self.solved == False:
             time.sleep(1)
             if self.counter >= 9:
-                self.solved = true
+                self.solved = True
                 print("Penny, Penny, Penny")
 
         print("Fertig(15)")
