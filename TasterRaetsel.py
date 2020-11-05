@@ -1,30 +1,31 @@
 
-import beat_the_room 
+import beat_the_room
 import RPi.GPIO as GPIO
 import time
+
+
 class TasterRaetsel(beat_the_room.Puzzle):
 
-    #gpios initialisieren
+    # gpios initialisieren
     def init(self):
         self.id = None
-        
+
         GPIO.setmode(GPIO.BCM)
-        
-        self.id = 0 #platzhalter
-        self.ports = [17,18,27,22]
+
+        self.id = 0  # platzhalter
+        self.ports = [17, 18, 27, 22]
         for i in range(4):
             GPIO.setup(self.ports[i], GPIO.OUT)
         self.states = [False for i in range(4)]
         self.clickCounts = [0 for i in range(4)]
         self.currentPin = 0
-        self.key = [3,5,3,1]
+        self.key = [3, 5, 3, 1]
 
-        
         pins = ""
         for i in range(4):
             pins += str(self.ports[i])+", "
         print("init(" + pins + ")")
-        #reservier mal paar pins
+        # reservier mal paar pins
 
     def interact(self):
         schwubbeldibubbeldi = time.time()
@@ -47,7 +48,6 @@ class TasterRaetsel(beat_the_room.Puzzle):
                     self.clickCounts = [0 for i in range(4)]
                 else:
                     schwubbeldibubbeldi = time.time()
-
 
     def deinit(self):
         pins = ""
@@ -73,19 +73,17 @@ class TasterRaetsel(beat_the_room.Puzzle):
                     return i
             else:
                 self.states[i] = False
-                
-                
+
         return -1
+
     def printStates(self):
         for i in range(4):
-            print(self.clickCounts[i], end = "")
-            
+            print(self.clickCounts[i], end="")
+
         print()
-        
 
 
-#test code for testing purposes
-
+# test code for testing purposes
 
 test = True
 if test:
