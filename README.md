@@ -14,7 +14,7 @@ Die Kamera des Pi's wird aktiviert und wartet auf geringen Lichteinfall. Sobald 
 Radio FM LichtHinweis (ist das das???)
 -->	Gibt Geländecode (4028) aus
 Radio wird gespielt; die interact-Methode wartet auf die HEX Eingabe (ist das die Aufgaben??)
-### Rätsel 4: Code ins Numbed eingeben
+### Rätsel 4: Code ins Numpad eingeben
 -->	Screenshot der Webseite wird gezeigt (IP-Adresse)
 ### Rätsel 5: Webseite (über hansenberg.info server)
 a.	IP-Adresse im Handy aufrufen, um auf Webseite zu gelangen
