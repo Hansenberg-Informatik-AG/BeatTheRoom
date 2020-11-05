@@ -56,12 +56,16 @@ Hier werden alle in der Init-Methode initialisierten Sensoren etc. deinitialisie
 
 # Story, evtl. die finale
 
-Schüler brechen nachts in Schulgebäude ein
+Schüler brechen nachts in Schulgebäude ein (Noten ausbessern)/ 21 Uhr, man muss bis 22 Uhr zurücksein
 
-Stanley ist schon an --> Sirene leuchtet schon / fängt an zu leuchten, wenn die Tür ins Schloss fällt, Kemra ist an (man sieht sich selbst)
-Schlüsselrätsel, um Sirene auszuschalten
+Stanley ist schon an --> Sirene leuchtet schon / fängt an zu leuchten, wenn die Tür ins Schloss fällt (Schlüssel zum ausmachen und hochfahren von Stanley)
+Stanley fährt hoch (Vorstellung "Stromversorgung hergestellt", ("Ihr werdet überwacht!!") oder einfach Videofeat mit recording in der Ecke)
+Kamera schaltet sich an, man sieht sich selbst auf dem Bildschirm (Kamera-Rätsel --> Abdeckung der Kamera)
 
-Stanley fährt hoch, monolog von Stanley(vorstellung) --> rauschen (Hacherstimme: "Wir haben ihn übernommen!!")
+Rauschen (durch Radiorätsel erfährt man, dass Hacker im System sind?/Hacker 1: "Wir haben es geschafft, wir sind im System drin", Hacker 2: "Psst, man kann uns gerade hören")
+Ansprache vom Hacker --> warum ist er Feind
+
+ --> rauschen (Hacherstimme: "Wir haben ihn übernommen!!")
 bis zu einem gewissen Rätsel, behalten Hacker die Macht
 
 danach bekommt sie Stanley wieder
