@@ -2,21 +2,18 @@
 
 ## Rätsel
 
-1. Schlüssel umdrehen
-2. Überwachung zu Verdunklung
-   Die Kamera des Pi's wird aktiviert und wartet auf geringen Lichteinfall. Sobald beispielsweise die Hand vor die Kamera gelegt wird, beginnt das dritte Rätsel
-3. Radio FM LichtHinweis.
-   Radio wird gespielt; die interact-Methode wartet auf die HEX Eingabe
-4. Protokol zu Penny
-5. Ubrella bis Klicker Eingabe
-
 Story Konzept STANLEY
 ### Zu Beginn vorhanden: 
 Lautsprecherbox, Sicherheitshinweispapier, Umbrella-Rechnung (im Fach?), Radio-Taschenlampe + Papier, Brett
 ### Rätsel 1: Schlüssel
+Schlüssel umdrehen
 ### Rätsel 2: Kamera
+Überwachung zu Verdunklung
+Die Kamera des Pi's wird aktiviert und wartet auf geringen Lichteinfall. Sobald beispielsweise die Hand vor die Kamera gelegt wird, beginnt das dritte Rätsel
 ### Rätsel 3: Radio
+Radio FM LichtHinweis (ist das das???)
 -->	Gibt Geländecode (4028) aus
+Radio wird gespielt; die interact-Methode wartet auf die HEX Eingabe (ist das die Aufgaben??)
 ### Rätsel 4: Code ins Numbed eingeben
 -->	Screenshot der Webseite wird gezeigt (IP-Adresse)
 ### Rätsel 5: Webseite (über hansenberg.info server)
@@ -35,6 +32,7 @@ c.	Auf Webseite Benutzername und Passwort eingeben („hacken“)
 => Ausgabe eines 4-stelligen Zahlencodes für das Seitenfach mit einem Schlüssel
 => Schlüssel für Blaue Kassenbox => darin liegt der Ausweis (und UV-Lampe?)
 ### Rätsel 9: Umbrella-Rätsel
+Ubrella bis Klicker Eingabe
        => wir erhalten einen Code für die Klicker
 
 ## Basic Rätsel-Klasse
