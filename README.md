@@ -1,6 +1,6 @@
 # Beat the room
 
-### Rätsel
+## Rätsel
 
 1. Schlüssel umdrehen
 2. Überwachung zu Verdunklung
@@ -11,30 +11,30 @@
 5. Ubrella bis Klicker Eingabe
 
 Story Konzept STANLEY
-## Zu Beginn vorhanden: 
+### Zu Beginn vorhanden: 
 Lautsprecherbox, Sicherheitshinweispapier, Umbrella-Rechnung (im Fach?), Radio-Taschenlampe + Papier, Brett
-## Rätsel 1: Schlüssel
-## Rätsel 2: Kamera
-## Rätsel 3: Radio
+### Rätsel 1: Schlüssel
+### Rätsel 2: Kamera
+### Rätsel 3: Radio
 -->	Gibt Geländecode (4028) aus
-## Rätsel 4: Code ins Numbed eingeben
+### Rätsel 4: Code ins Numbed eingeben
 -->	Screenshot der Webseite wird gezeigt (IP-Adresse)
-## Rätsel 5: Webseite (über hansenberg.info server)
+### Rätsel 5: Webseite (über hansenberg.info server)
 a.	IP-Adresse im Handy aufrufen, um auf Webseite zu gelangen
 b.	Screenshot sieht anders aus --- Fehler/Unterschiede suchen -> neues Rätsel?
 c.	Auf Webseite Benutzername und Passwort eingeben („hacken“)
 - Counter mit Fehlversuchen-Hinweis: können Sie lesen?
 -->	Führt zum Penny Video
-## Rätsel 6: Penny Klopfzeichen
+### Rätsel 6: Penny Klopfzeichen
 => Das Lösen öffnet ein Fach mit (weiteren Hinweisen, Rätseln…)
 > Überleitung zur Mail?
-## Rätsel 7: Mail an Frau von Zitzewitz schreiben
+### Rätsel 7: Mail an Frau von Zitzewitz schreiben
 => Automatische Antwort mit Rückverweis auf das Sicherheitsstufenblatt
-## Rätsel 8: Sicherheitsstufenblatt („schlecht gedruckt“ – muss auf bestimmte Art geknickt   werden)
+### Rätsel 8: Sicherheitsstufenblatt („schlecht gedruckt“ – muss auf bestimmte Art geknickt   werden)
        => entstandener augmented reality code auf Webseite scannen (vllt Verweis auf Umdrehen?)
 => Ausgabe eines 4-stelligen Zahlencodes für das Seitenfach mit einem Schlüssel
 => Schlüssel für Blaue Kassenbox => darin liegt der Ausweis (und UV-Lampe?)
-## Rätsel 9: Umbrella-Rätsel
+### Rätsel 9: Umbrella-Rätsel
        => wir erhalten einen Code für die Klicker
 
 ## Basic Rätsel-Klasse
@@ -153,17 +153,17 @@ Was ist unser Ziel?
 
 -andere Schulen übernehmen
 
-### Story 3
+## Story 3
 
 progressive Eskalation
 --> am Anfang Hansenberg übernehmen
 --> andere Schulen im Rheingaugebiet übernehmen
 --> "Fehler im Gebiet "Welt" festgestellt, beginne nun Auslöschung der Menschlichen Rasse" --> Prozentleiste --> kurz vor Schluss
 
-## Schlüsselrtätsel
+### Schlüsselrtätsel
 bootet Stanley
 "Guten Morgen, beziehe aktuelle globale Daten. Warten Sie bitte einen Moment... (Wartemusik). System erfolgreich gebootet. Einen Moment bitte, ich übernehme nun die Schule. Sozialpädagogen und Lehrer werden nun nicht mehr benötigt"
 
-## Story Idee
+### Story Idee
 
 Herr Hörner existiert nicht mehr. Herr Hörner hat sich in einer KI verewigt 
