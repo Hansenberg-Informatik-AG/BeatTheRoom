@@ -12,6 +12,7 @@ class KameraRaetsel(Puzzle):
 
         global camera
         camera = PiCamera()
+        camera.start_preview()
         # GPIO.setmode(GPIO.BOARD)
 
         #self.pin_to_circuit = 7
@@ -22,7 +23,6 @@ class KameraRaetsel(Puzzle):
 
     def interact(self):
         dark = False
-        camera.start_preview()
         count = 0
         while not self.solved:
             if dark:  # bin ich dunkel? TODO
