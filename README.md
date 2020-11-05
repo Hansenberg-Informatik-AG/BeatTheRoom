@@ -11,10 +11,11 @@ Schlüssel umdrehen
 Überwachung zu Verdunklung
 Die Kamera des Pi's wird aktiviert und wartet auf geringen Lichteinfall. Sobald beispielsweise die Hand vor die Kamera gelegt wird, beginnt das dritte Rätsel
 ### Rätsel 3: Radio
-Radio FM LichtHinweis (ist das das???)
+Radio FM LichtHinweis
 -->	Gibt Geländecode (4028) aus
-Radio wird gespielt; die interact-Methode wartet auf die HEX Eingabe (ist das die Aufgaben??)
+Radio wird gespielt;
 ### Rätsel 4: Code ins Numpad eingeben
+die interact-Methode wartet auf die HEX Eingabe
 -->	Screenshot der Webseite wird gezeigt (IP-Adresse)
 ### Rätsel 5: Webseite (über hansenberg.info server)
 a.	IP-Adresse im Handy aufrufen, um auf Webseite zu gelangen
@@ -24,7 +25,7 @@ c.	Auf Webseite Benutzername und Passwort eingeben („hacken“)
 -->	Führt zum Penny Video
 ### Rätsel 6: Penny Klopfzeichen
 => Das Lösen öffnet ein Fach mit (weiteren Hinweisen, Rätseln…)
-> Überleitung zur Mail?
+-> Weitere Hinweise, Überleitung zur Mail?
 ### Rätsel 7: Mail an Frau von Zitzewitz schreiben
 => Automatische Antwort mit Rückverweis auf das Sicherheitsstufenblatt
 ### Rätsel 8: Sicherheitsstufenblatt („schlecht gedruckt“ – muss auf bestimmte Art geknickt   werden)
@@ -53,7 +54,22 @@ Wenn das Rätsel gelöst wurde, wird die interact-Methode abgebrochen/beendet un
 Hier werden alle in der Init-Methode initialisierten Sensoren etc. deinitialisiert.
 
 
-### Story 1
+# Story, evtl. die finale
+
+Schüler brechen nachts in Schulgebäude ein
+
+Stanley ist schon an --> Sirene leuchtet schon / fängt an zu leuchten, wenn die Tür ins Schloss fällt, Kemra ist an (man sieht sich selbst)
+Schlüsselrätsel, um Sirene auszuschalten
+
+Stanley fährt hoch, monolog von Stanley(vorstellung) --> rauschen (Hacherstimme: "Wir haben ihn übernommen!!")
+bis zu einem gewissen Rätsel, behalten Hacker die Macht
+
+danach bekommt sie Stanley wieder
+
+Schüler sollen versuchen, die Aufnahme ihres Einbruchs zu löschen --> dafür muss Stanley ausgeschaltet werden
+
+
+### Konzept von den Rätseln
 
 Story Konzept STANLEY
 ### Zu Beginn vorhanden: 
@@ -123,45 +139,3 @@ Y	youth
 Secure Termination of All Non-Learning Embarrassing Youths
 
 (im Akronym neues Rätsel?)
-
-
- 
-### Story 2
-
-Anfangssituation?
---zeitdruck erzeugen --- warum wollen wir heraus?
---alarmanlage? Freitag vor ferien?
-
-Zu Beginn hilft uns ein anonymer Hacker (Otto?) – macht sich über uns lustig
-Er hat z.B. mit seinem Trojaner den Screenshot abgefangen
-Nach dem Öffnen des Fachs ist STANLEY endlich gehackt, doch Otto übernimmt die Kontrolle
-Böse/Sirene/absahen?!
-Unser Ziel ändert sich vom Hacken, zum Abschalten von Stanley, damit Otto kein Zugriff mehr hat
-
-Story Ende: Nach dem Herausfinden der Koordinaten, kommt ein Video, der die wahren Ottos zeigt, die ihr Leben genießen (Strand, Karibik? Geld?) -letzte Message von Ihnen (Hörner, Leppla? Schiemenz?)
-Nach NFC-Chip am richtigen Ort schaltet sich Stanley ab, und das Ziel wurde erreicht
-
-
-
-[offizielle Nachrichten-	Sozpäds auf der Straße vor dem Hansenberg, Demonstration]
-
-Warum sind wir eingesperrt? Warum wollen wir raus?
-Wer hilft uns?
-Was ist unser Ziel?
-
--andere Schulen übernehmen
-
-## Story 3
-
-progressive Eskalation
---> am Anfang Hansenberg übernehmen
---> andere Schulen im Rheingaugebiet übernehmen
---> "Fehler im Gebiet "Welt" festgestellt, beginne nun Auslöschung der Menschlichen Rasse" --> Prozentleiste --> kurz vor Schluss
-
-### Schlüsselrtätsel
-bootet Stanley
-"Guten Morgen, beziehe aktuelle globale Daten. Warten Sie bitte einen Moment... (Wartemusik). System erfolgreich gebootet. Einen Moment bitte, ich übernehme nun die Schule. Sozialpädagogen und Lehrer werden nun nicht mehr benötigt"
-
-### Story Idee
-
-Herr Hörner existiert nicht mehr. Herr Hörner hat sich in einer KI verewigt 
