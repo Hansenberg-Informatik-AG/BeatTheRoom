@@ -87,7 +87,7 @@ class TasterRaetsel(beat_the_room.Puzzle):
 
 test = True
 if test:
-    Puzzle2 = TasterRaetsel(None)
+    Puzzle2 = TasterRaetsel()
     Puzzle2.init()
     time.sleep(1)
     Puzzle2.interact()
