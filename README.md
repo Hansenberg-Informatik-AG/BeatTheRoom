@@ -4,7 +4,7 @@
 
 Story Konzept STANLEY
 ### Zu Beginn vorhanden: 
-Lautsprecherbox, Sicherheitshinweispapier, Umbrella-Rechnung (im Fach?), Radio-Taschenlampe + Papier, Brett
+Schlüssel, Lautsprecherbox, Sicherheitshinweispapier, Umbrella-Rechnung (im Fach?), Radio-Taschenlampe + Papier, Brett
 ### Rätsel 1: Schlüssel
 Schlüssel umdrehen
 ### Rätsel 2: Kamera
