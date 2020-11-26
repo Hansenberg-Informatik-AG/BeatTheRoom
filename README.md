@@ -74,6 +74,7 @@ danach bekommt sie Stanley wieder
 
 Schüler sollen versuchen, die Aufnahme ihres Einbruchs zu löschen --> dafür muss Stanley ausgeschaltet werden
 
+Idee für das Ende: wir können STANLEY nicht vor Ort ausschalten und müssen deshalb die Zentrale ausfindig machen (NFC-Chip-Rätsel mit Karte-Koordinaten etc.) 
 
 ### Konzept von den Rätseln
 
