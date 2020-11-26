@@ -56,25 +56,27 @@ Hier werden alle in der Init-Methode initialisierten Sensoren etc. deinitialisie
 
 # Story, evtl. die finale
 
-Schüler brechen nachts in Schulgebäude ein (Noten ausbessern)/ 21 Uhr, man muss bis 22 Uhr zurücksein
+Süßigkeiten in einem Raum? Nutella/ Nuss-Nougat-Creme
+Schüler brechen nachts in Schulgebäude (Pakhos Büro?, am Fenster) ein (Noten ausbessern)/ 21 Uhr, man muss bis 22 Uhr zurücksein
 
-Stanley ist schon an --> Sirene leuchtet schon / fängt an zu leuchten, wenn die Tür ins Schloss fällt (Schlüssel zum ausmachen und hochfahren von Stanley)
-Stanley fährt hoch (Vorstellung "Stromversorgung hergestellt", ("Ihr werdet überwacht!!") oder einfach Videofeat mit recording in der Ecke)
-Kamera schaltet sich an, man sieht sich selbst auf dem Bildschirm (Kamera-Rätsel --> Abdeckung der Kamera)
+Stanley ist schon an --> Sirene leuchtet schon / fängt an zu leuchten, wenn die Tür ins Schloss fällt (Schlüssel zum ausmachen der Sirene)
+Stanley fährt hoch (Vorstellung "Stromversorgung hergestellt", "Gesichtserkennung und automatische Speicherung aktiviert!!" oder einfach Video mit recording in der Ecke)
+Kamera schaltet sich an, man sieht sich selbst auf dem Bildschirm (Kamera-Rätsel --> Abdeckung der Kamera --> "visuelles tracking nicht möglich, ändere Strategie, stelle letzte Ausioaufnahme zu den Soz-Päds... speicher korrupiert, gebe letzte Audionachricht wieder")
 
-Rauschen (durch Radiorätsel erfährt man, dass Hacker im System sind?/Hacker 1: "Wir haben es geschafft, wir sind im System drin", Hacker 2: "Psst, man kann uns gerade hören")
-Ansprache vom Hacker --> warum ist er Feind
+Rauschen (durch Radiorätsel erfährt man, Programmierer im System sind (Hörner und Leppla), welche Stanley "vermeidlich" als totale Überwachung programmiert haben)
+Wichtige Wörter um zu verstehen, dass es nicht so ist sind aus gerauscht --> totale Überwachung, Code ist der übliche um aufs Gelände zu kommen (mit rauschen)
 
---idee: wir hacken uns immer mehr rein -- zuerst Ton: hören wie leute bsp. passwort ändern; (jm richtet Stanley ein, aber durch rauschen missverstanden-> als hacker interpretiert) --- dann iwann Video: z.B. Leppla gefangen... (Hintergrundstory, die der "Spieler" nicht kennt)
- 
-bis zu einem gewissen Rätsel, behalten Hacker die Macht
+"Der Code wurde korrekt eingegeben, automatische Weiterleitung zu Website erfolt, Freischaltung des Tresors jetzt möglich" --> keine Tastatur und Maus --> IP-Adresse im Handy eingeben (Benutzer und Passwort eingeben)
 
-danach bekommt sie Stanley wieder
+Wargame(Idee) --> Stanley von Hörner (und Leppla) (am Anfang nich bekannt) programmiert, selbstlernend (Schüler sollen sich nicht mehr austragen müssen, inklusive Gesichtserkennung) 
+--> Leppla und Hörner erst als die bösen, dann schlussendlich nur zu dumm gewesen Stanley richtig zu programmieren
+--> teile aus gesprochenen Sätzen der "Programmierer" werden ausgeraucht --> dasgegenteil kommt rüber (Hörner und Leppla werden als böse dargestellt)
 
+benötigen einen "guten" Stanley-Namen, welcher durch rausstreichen von Wörtern böse klingt
 
-Schüler sollen versuchen, die Aufnahme ihres Einbruchs zu löschen --> dafür muss Stanley ausgeschaltet werden
+Schüler wollen versuchen, die Aufnahme ihres Einbruchs zu löschen --> dafür muss Stanley ausgeschaltet werden
 
-Idee für das Ende: wir können STANLEY nicht vor Ort ausschalten und müssen deshalb die Zentrale ausfindig machen (NFC-Chip-Rätsel mit Karte-Koordinaten etc.) 
+Idee für das Ende: wir können STANLEY nicht vor Ort ausschalten und müssen deshalb die Zentrale ausfindig machen (NFC-Chip-Rätsel mit Karte-Koordinaten etc., vllt Informatikraum??) 
 
 ### Konzept von den Rätseln
 
@@ -89,7 +91,8 @@ Danke, dass Sie mich gebootet haben.
 Überwachungssystem läuft in 3 2 1 (Kamera einschalten, Hochfahr/Aktivierungs Sound)
 Zur Prozessoptimierung werden Entlassungspapiere an alle Sozialpädagogen und Lehrer verschickt.
 -	rote LEDs?
-###Rätsel 2: Kamera
+--> zweites Schlüsselrätsel?????? --> zu Anfang zwei Schlüssel an einem Bund, man muss darauf kommen, dass der zweite Schlüssel am Bund noch für was anderes ist
+### Rätsel 2: Kamera
 (Stimme STANLEY) 
 Visuelle Überwachung im Kontrollzentrum deaktiviert.
 Gefahrenquelle wurde entdeckt. 
