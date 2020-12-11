@@ -25,7 +25,7 @@ class TasterRaetsel(beat_the_room.Puzzle):
         for i in range(4):
             pins += str(self.ports[i])+", "
         print("init(" + pins + ")")
-        # reservier mal paar pins
+        # reservier alle benötigten
 
     def interact(self):
         schwubbeldibubbeldi = time.time()
