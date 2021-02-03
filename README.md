@@ -1,5 +1,11 @@
 # Beat the room
 
+## Aufgaben
+Story festlegen
+Story Umsetzung: Video, Texte, Materialen, Audios, Hilfestellungen
+Rätsel fertigstellen und anpassen
+Raumaufteilung
+
 ## Rätsel
 
 Story Konzept STANLEY
