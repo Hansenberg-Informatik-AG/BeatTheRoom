@@ -65,13 +65,21 @@ Stanley fährt hoch (Vorstellung "Stromversorgung hergestellt", "Gesichtserkennu
 Kamera schaltet sich an, man sieht sich selbst auf dem Bildschirm (Kamera-Rätsel --> Abdeckung der Kamera --> "visuelles tracking nicht möglich, ändere Strategie, stelle letzte Ausioaufnahme zu den Soz-Päds... speicher korrupiert, gebe letzte Audionachricht wieder")
 
 Rauschen (durch Radiorätsel erfährt man, Programmierer im System sind (Hörner und Leppla), welche Stanley "vermeidlich" als totale Überwachung programmiert haben)
-Wichtige Wörter um zu verstehen, dass es nicht so ist sind aus gerauscht --> totale Überwachung, Code ist der übliche um aufs Gelände zu kommen (mit rauschen)
+Wichtige Wörter um zu verstehen, dass es nicht so ist sind aus gerauscht --> totale Überwachung, Code ist der übliche um aufs Gelände zu kommen (mit rauschen) (schwärmerei, was man auf der Website alles machen kann, warnung: man kann dort jedoch auch sachen löschen, also achtung)
 
-"Der Code wurde korrekt eingegeben, automatische Weiterleitung zu Website erfolt, Freischaltung des Tresors jetzt möglich" --> keine Tastatur und Maus --> IP-Adresse im Handy eingeben (Benutzer und Passwort eingeben)
+"Der Code wurde korrekt eingegeben, automatische Weiterleitung zu Website erfolt, Freischaltung des Tresors jetzt möglich" --> keine Tastatur und Maus --> IP-Adresse im Handy eingeben (Benutzer und Passwort eingeben) (Website: log-in zum Stanley Stystem --> man möchte dort das Video löschen)
+
+Autoidentifizierung des Menschseins mithilfe des Klopfens
+
+Menu auf website: ein Menupunkt: Alte Aufnahmen löschen --> Berechtigung einfordern: Frau von Zitzewitz schreiben (im Namen von Pakho mit guter Begrüngung --> Emails sammeln :) )
+
+Antwort von Frau von Zitzewitz: Berechtigung erteilt, Audio von Hörner und Leppla: "Da hat gerade irgendwer die Berechtigung bekommen, wie kann das möglich sein... einen Moment ich habe mich drum gekümmert"--> Fehleranzeige: Access denied +  Verweiß auf das Blatt: "Hmm, da kämpft jemand gegen uns... wo ist denn das Blatt?... oh mist, dass habe ich im Raum vergessen" --> wofür ist das Blatt zuständig?
+
+Erhalt von Code: Seitenfach mit Schlüssel für blaue Kassenbox --> Ausweis (und UV-Lampe): Storyteil?
 
 Wargame(Idee) --> Stanley von Hörner (und Leppla) (am Anfang nich bekannt) programmiert, selbstlernend (Schüler sollen sich nicht mehr austragen müssen, inklusive Gesichtserkennung) 
 --> Leppla und Hörner erst als die bösen, dann schlussendlich nur zu dumm gewesen Stanley richtig zu programmieren
---> teile aus gesprochenen Sätzen der "Programmierer" werden ausgeraucht --> dasgegenteil kommt rüber (Hörner und Leppla werden als böse dargestellt)
+--> teile aus gesprochenen Sätzen der "Programmierer" werden ausgerauscht --> dasgegenteil kommt rüber (Hörner und Leppla werden als böse dargestellt)
 
 benötigen einen "guten" Stanley-Namen, welcher durch rausstreichen von Wörtern böse klingt
 
