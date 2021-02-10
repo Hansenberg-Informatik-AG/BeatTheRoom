@@ -75,17 +75,33 @@ Menu auf website: ein Menupunkt: Alte Aufnahmen löschen --> Berechtigung einfor
 
 Antwort von Frau von Zitzewitz: Berechtigung erteilt, Audio von Hörner und Leppla: "Da hat gerade irgendwer die Berechtigung bekommen, wie kann das möglich sein... einen Moment ich habe mich drum gekümmert"--> Fehleranzeige: Access denied +  Verweiß auf das Blatt: "Hmm, da kämpft jemand gegen uns... wo ist denn das Blatt?... oh mist, dass habe ich im Raum vergessen" --> wofür ist das Blatt zuständig?
 
-Erhalt von Code: Seitenfach mit Schlüssel für blaue Kassenbox --> Ausweis (und UV-Lampe): Storyteil?
+Erhalt von Code: Seitenfach mit Schlüssel für blaue Kassenbox --> Ausweis (und UV-Lampe) und Morsecode: Storyteil?
 
-Wargame(Idee) --> Stanley von Hörner (und Leppla) (am Anfang nich bekannt) programmiert, selbstlernend (Schüler sollen sich nicht mehr austragen müssen, inklusive Gesichtserkennung) 
---> Leppla und Hörner erst als die bösen, dann schlussendlich nur zu dumm gewesen Stanley richtig zu programmieren
---> teile aus gesprochenen Sätzen der "Programmierer" werden ausgerauscht --> dasgegenteil kommt rüber (Hörner und Leppla werden als böse dargestellt)
+Umbrella-Rätsel --> gelöst: Morsecode wird abgespielt
 
-benötigen einen "guten" Stanley-Namen, welcher durch rausstreichen von Wörtern böse klingt
+Morsecode (Button mit dem der abgespielt wird) --> Verweiß auf Ansscluss des Bretts
 
-Schüler wollen versuchen, die Aufnahme ihres Einbruchs zu löschen --> dafür muss Stanley ausgeschaltet werden
+Sobald Brett angeschlosen ist: "Komm jetzt, wir müssen besser konzentrieren... och man, warum denn, dass hat doch eh keinen Sinn (verrauscht)... aber sie dürfen uns nicht finden... "
 
-Idee für das Ende: wir können STANLEY nicht vor Ort ausschalten und müssen deshalb die Zentrale ausfindig machen (NFC-Chip-Rätsel mit Karte-Koordinaten etc., vllt Informatikraum??) 
+Koordinaten per Anzeige (Sebastian) und UV-Koordinaten (Schnittpunkt) auf Kartze mit NFC Chips
+
+Endszene: Hörner und Leppla sitzen entspannt auf dem Punkt der Karte (Karibik oder so) und witzeln über das Programm, Viedeos quatsch und werden alle gelöscht, Videos und Stanley werden deaktiviert --> Tür geht wieder auf
+
+### Intentionen 
+
+Schüler:
+
+Noten verbessern
+Wollen Aufnahmen ihres Einbruchs löschen und bis 10 Uhr zurüch in ihren WGs sein
+
+Leppla und Hörner:
+
+Haben das Programm entwickelt
+merken, dass es gegen ihre Prinzipuen verstößt und wollen es abschalten (haben jedoch dabei Schwierigkeiten)
+haben keine Einverständnis für Stanley und wollen ihn deshalb geheim halten
+denken sie, dass Schüler Hacker sind, die das Programm ausnutzen wollen
+haben Konzentrationsschwierigkeiten
+
 
 ## Namensbedeutung Stanley
 
