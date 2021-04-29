@@ -1,5 +1,6 @@
 import time
 import beat_the_room
+import os
 import RPi.GPIO as GPIO
 
 
@@ -8,6 +9,7 @@ class SchluesselRaetsel(beat_the_room.Puzzle):
     def init(self):
         # hinweis filmdatei
         # die Rätsel sind linear
+        os.system("setterm --blank force")
         self.hints = [beat_the_room.make_hint(
             self, "test.avi"), beat_the_room.make_hint(self, "hinweis2.avi")]
         # Rätsel erstellt von: Leo Wenzel
