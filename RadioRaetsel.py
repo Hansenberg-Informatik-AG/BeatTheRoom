@@ -1,7 +1,7 @@
 
 import RPi.GPIO as gpio
 import time
-import beat_the_room.Puzzle
+import beat_the_room
 
 class Puzzle1(beat_the_room.Puzzle):
 
