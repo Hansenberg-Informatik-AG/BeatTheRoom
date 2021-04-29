@@ -1,13 +1,5 @@
 # Beat the room
 
-## Aufgaben
-Story festlegen
-Story Umsetzung: Video, Texte, Materialen, Audios, Hilfestellungen
-Rätsel fertigstellen und anpassen
-Raumaufteilung
-Bitte keine Umlaufte in den Dateien verwenden
-
-
 # Story, Die Finale
 
 ### Ausgangssituation:
@@ -19,19 +11,32 @@ Schüler brechen nachts in Schulgebäude (Pakhos Büro?, am Fenster) ein (Noten 
 - Stanley ist schon an (Sirene leuchtet)
 - Tür fällt ins Schloss
 - --> Schlüssel drehen zum Sirenen ausschalten
+#### TODO: 
+- Sirene
+- Schlüsselrätsel
+- Raum? Bedingungen --> Wie sperren wir sie ein? (oder geben ihnen zumindest das Gefühl)
 
 ### STANLEY fährt hoch
 - Vorstellung "Stromversorgung hergestellt", "Gesichtserkennung und automatische Speicherung aktiviert!!" oder einfach Video mit recording in der Ecke
 - --> Kamera schaltet sich an (man sieht sich selbst --> Kamerarätsel)
 - "visuelles tracking abgeschaltet, bisherige Aufnahme hochgeladen"...
+#### TODO:
+- STANLEYs Anfangsmonolog gestalten, ausarbeiten, aufnehmen
+- Kamerarätsel
+- STANLEYs Reaktion auf die verdeckte Kamera
 
 ### Radiorätsel
 - Über verrauschte Audioaufname: 
      Programmierer im System sind (Hörner und Leppla), welche Stanley "vermeidlich" als totale Überwachung programmiert haben
 - Nachricht missverständlich verrauscht
 - gibt den Eindruck: totale Überwachung am Berg
-- Code fürs Numbpad wird gegeben (üblicher COde, um auf das Gelände zu kommen)
+- Code fürs Numbpad wird gegeben (üblicher Code, um auf das Gelände zu kommen)
 - Schwärmerei, was man auf der Website alles machen kann, warnung: man kann dort jedoch auch sachen löschen, also achtung
+#### TODO:
+- Audioaufnahme für das Radiorätsel!!! (Text schreiben, aufnehmen, verrauschen)
+- Radiorätsel allgemein
+- Numbpad
+
 
 ### Code wird ins Numbpad eingegeben --> Screenshot von Webseite wird gezeigt
 - "Der Code wurde korrekt eingegeben, automatische Weiterleitung zu Website erfolt, Freischaltung des Tresors jetzt möglich"
@@ -39,6 +44,10 @@ Schüler brechen nachts in Schulgebäude (Pakhos Büro?, am Fenster) ein (Noten 
 - IP-Adresse im Handy eingeben (Benutzer & Passwort eingeben)
 - Webseite = log-in zur STANLEY-Cloud            (Möglicherweise dort auch Rankings und Mails speichern, alle Daten hinterlegen)
 - Ziel: darauf Video zu löschen
+#### TODO:
+- STANLEYs Reaktion auf Numbpadcode
+- Webseite fertig machen! (Rätsel, Gestaltung, etc.)
+- -Screenshot für STANLEY
  
 ### im Menu: "letztes Video löschen" auswählen
 - löst das Penny-Video aus
@@ -51,19 +60,44 @@ Schublade enthält:
 - Blätterschnipsel von Zitzewitz?
 - Hinweis darauf, dass ihr eine Mail geschrieben werden muss, um STANLEY komplett zurückzusetzen
        "sehr geehrter Werauchimmer, wenn Sie mal wieder Stanley zurücksetzten wollen...schreiben sie mir bitte eine gute Begründung?!"
+#### TODO:
+- Penny-Rätsel
+- Entriegelung Schublade
+- Schublade mit allem nötigen füllen
+- Rätsel Zitewitzüberleitung machen
+- möglicherweise noch Rätsel zur Schubladenöffnung
+
 
 ### Mail an Zitzewitz zu schreiben
 - erhählt Bestätigungscode, um STANLEY zurückzusetzen (Numbpad?)
 - löst Reaktion aus --> "wurde zurückgesetzt", "wieder einsatzbereit"
 ---> Ziel, ihn ganz auszuschalten
+#### TODO:
+- alles rund um die Mail-Adresse
+- Eingabe Bestätigungscode -Numbpad?
+- Reaktion STANLEY
+
 
 ### Umbrella-Rätsel
 - ergibt Code für Klicker
 - End-Auflösungsvideo wird ausgestrahlt
        "Eichhörnchenpopulation überwachen" (Spontane Idee Thronser)
 - STANLEY fährt herunter 
+#### TODO:
+- Umbrella-Rätsel
+- Klickereingabe funktionstüchtig
+- Endvideo drehen
 
 
+#
+#
+## Aufgaben
+- Story festlegen
+- Story Umsetzung: Video, Texte, Materialen, Audios, 
+- Hilfestellungen?!
+- Rätsel fertigstellen und anpassen (STANLEY-Programm muss laufen)
+- Raumaufteilung
+- Bitte keine Umlaufte in den Dateien verwenden
 #
 #
 
