@@ -1,11 +1,11 @@
 # Beat the room
 
 ## Aufgaben
-Story festlegen
-Story Umsetzung: Video, Texte, Materialen, Audios, Hilfestellungen
-Rätsel fertigstellen und anpassen
-Raumaufteilung
-Bitte keine Umlaufte in den Dateien verwenden
+Story festlegen  
+Story Umsetzung: Video, Texte, Materialen, Audios, Hilfestellungen  
+Rätsel fertigstellen und anpassen  
+Raumaufteilung  
+Bitte keine Umlaufte in den Dateien verwenden  
 
 ## Rätselreihenfolge
 Story Konzept STANLEY
