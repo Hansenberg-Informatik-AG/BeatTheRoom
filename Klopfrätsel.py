@@ -3,7 +3,7 @@ import beat_the_room
 import RPi.GPIO as GPIO
 
 
-class Puzzle1(beat_the_room.Puzzle):
+class Klopfraetsel(beat_the_room.Puzzle):
 
     def init(self):
         # Annika und Johann Versuch zum Klopfrätsel
@@ -43,13 +43,3 @@ class Puzzle1(beat_the_room.Puzzle):
         print("deinitlasing(15)")
         # DEINITIALISIERE SENSOREN / HARDWARE
         GPIO.cleanup()
-
-
-test = True
-if test:
-    Puzzle2 = Puzzle1()
-    Puzzle2.init()
-    time.sleep(1)
-    Puzzle2.interact()
-    print("succsess")
-    Puzzle2.deinit()

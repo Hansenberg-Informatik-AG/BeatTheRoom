@@ -21,12 +21,10 @@ class SchluesselRaetsel(beat_the_room.Puzzle):
     def interact(self):
         anfang = GPIO.input(21)
         # sobald diese variable gesetzt ist, ist das Rätsel fertig! Hier muss wahrscheinlich immer eine while Schleife rein!
-        while self.solved == False:
-            self.solved = (GPIO.input(21) != anfang)
+        while not self.solved:
+            self.solved = GPIO.input(21) != anfang
 
     def deinit(self):
         print("deinitlasing(42)")
         os.system("tvservice -p")
-        # DEINITIALISIERE SENSOREN / HARDWARE
-        # GPIO.cleanup() etc
         GPIO.cleanup()
