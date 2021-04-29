@@ -57,7 +57,7 @@ Youthlessbox???
 Uv-licht und lampe!?
 Zweiter monitor? Zweiter pi! --- brille?! (Anne)
 
-## Story, evtl. die finale
+# Story, evtl. die finale
 Süßigkeiten in einem Raum? Nutella/ Nuss-Nougat-Creme
 Schüler brechen nachts in Schulgebäude (Pakhos Büro?, am Fenster) ein (Noten ausbessern)/ 21 Uhr, man muss bis 22 Uhr zurücksein
 
@@ -69,12 +69,28 @@ Rauschen (durch Radiorätsel erfährt man, Programmierer im System sind (Hörner
 Wichtige Wörter um zu verstehen, dass es nicht so ist sind aus gerauscht --> totale Überwachung, Code ist der übliche um aufs Gelände zu kommen (mit rauschen) (schwärmerei, was man auf der Website alles machen kann, warnung: man kann dort jedoch auch sachen löschen, also achtung)
 
 "Der Code wurde korrekt eingegeben, automatische Weiterleitung zu Website erfolt, Freischaltung des Tresors jetzt möglich" --> keine Tastatur und Maus --> IP-Adresse im Handy eingeben (Benutzer und Passwort eingeben) (Website: log-in zum Stanley Stystem --> man möchte dort das Video löschen)
+       "Auf Webseite alle ... hinterlegt"
+--> möglicherweise sogar direkten Zugriff auf die Webseite auf dem Raspberry (ist Touch)?!
 
-Autoidentifizierung des Menschseins mithilfe des Klopfens
+Autoidentifizierung des Menschseins mithilfe des Klopfens     (oder als Passwort-Hinweis)
+       Auf Webseite Rangliste, wie schnell das schon geknackt wurde (+ am Ende Daten darauf hochgeladen)
+--> Video auf Webseite gelöscht (Cloudversion), "bitte denken sie daran, wenn die lokale Version (auf Stanley) nicht innerhalt von 30min gelöscht wird, gibt es einen Reload"
 
-Menu auf website: ein Menupunkt: Alte Aufnahmen löschen --> Berechtigung einfordern: Frau von Zitzewitz schreiben (im Namen von Pakho mit guter Begrüngung --> Emails sammeln :) )
+für Bestätigungscode, um Stanley zurückzusetzten --> Zitzewitz-Mail schreiben
 
-Antwort von Frau von Zitzewitz: Berechtigung erteilt, Audio von Hörner und Leppla: "Da hat gerade irgendwer die Berechtigung bekommen, wie kann das möglich sein... einen Moment ich habe mich drum gekümmert"--> Fehleranzeige: Access denied +  Verweiß auf das Blatt: "Hmm, da kämpft jemand gegen uns... wo ist denn das Blatt?... oh mist, dass habe ich im Raum vergessen" --> wofür ist das Blatt zuständig?
+Stanley zurückgesetzt, aber noch an --> über Umbrella-Rätsel --> Klicker-Code zum herunterfahren!!
+
+Ende: Video mit Auflösung "Eichhörnchenpopulation überwachen"
+
+
+
+eventuelle spätere Ergänzungen:
+
+Menu auf website: ein Menupunkt: Alte Aufnahmen löschen --> Berechtigung einfordern: an Geschäftsführung (Frau von Zitzewitz) schreiben (im Namen von Pakho mit guter Begrüngung --> Emails sammeln :) auf Homepage hochladen?!)
+
+(überprüft E-Mail auf Förmlichkeit- nur wenn "Sehr geehrte" drin steht, geht es weiter) Antwort von Frau von Zitzewitz: Berechtigung erteilt, 
+
+Audio von Hörner und Leppla: "Da hat gerade irgendwer die Berechtigung bekommen, wie kann das möglich sein... einen Moment ich habe mich drum gekümmert"--> Fehleranzeige: Access denied +  Verweiß auf das Blatt: "Hmm, da kämpft jemand gegen uns... wo ist denn das Blatt?... oh mist, dass habe ich im Raum vergessen" --> wofür ist das Blatt zuständig?
 
 Erhalt von Code: Seitenfach mit Schlüssel für blaue Kassenbox --> Ausweis (und UV-Lampe) und Morsecode: Storyteil?
 
@@ -126,8 +142,3 @@ Diese Methode prüft, ob das Rätsel gelöst wurde. Solange dies nicht geschehen
 Wenn das Rätsel gelöst wurde, wird die interact-Methode abgebrochen/beendet und die deinit-Methode aufgerufen.
 #### Einer Deinit-Methode:
 Hier werden alle in der Init-Methode initialisierten Sensoren etc. deinitialisiert.
-#Verbinden mit Stanley:
-ssh pi@stanley.local
-falls was gefragt wird: akzeptieren
-Passwort: root
-Juhuu verbunden
