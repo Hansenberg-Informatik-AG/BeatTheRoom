@@ -126,3 +126,8 @@ Diese Methode prüft, ob das Rätsel gelöst wurde. Solange dies nicht geschehen
 Wenn das Rätsel gelöst wurde, wird die interact-Methode abgebrochen/beendet und die deinit-Methode aufgerufen.
 #### Einer Deinit-Methode:
 Hier werden alle in der Init-Methode initialisierten Sensoren etc. deinitialisiert.
+#Verbinden mit Stanley:
+ssh pi@stanley.local
+falls was gefragt wird: akzeptieren
+Passwort: root
+Juhuu verbunden
