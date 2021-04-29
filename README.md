@@ -64,8 +64,8 @@ Schublade enthält:
 - STANLEY fährt herunter 
 
 
-
-
+#
+#
 
 ## Rätselreihenfolge
 Story Konzept STANLEY
