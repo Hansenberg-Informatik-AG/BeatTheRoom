@@ -14,7 +14,7 @@ class RadioRaetsel(beat_the_room.Puzzle):
             ['4','5','6','B'],
             ['7','8','9','C'],
             ['*', '0', '#','D']]
-
+        #im zweifel ausprobieren ob es klappt
         self.zeile = [14, 15, 18, 23]
         self.spalte = [24, 25, 8, 7]
 
