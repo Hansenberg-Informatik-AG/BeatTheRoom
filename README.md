@@ -1,11 +1,71 @@
 # Beat the room
 
 ## Aufgaben
-Story festlegen  
-Story Umsetzung: Video, Texte, Materialen, Audios, Hilfestellungen  
-Rätsel fertigstellen und anpassen  
-Raumaufteilung  
-Bitte keine Umlaufte in den Dateien verwenden  
+Story festlegen
+Story Umsetzung: Video, Texte, Materialen, Audios, Hilfestellungen
+Rätsel fertigstellen und anpassen
+Raumaufteilung
+Bitte keine Umlaufte in den Dateien verwenden
+
+
+# Story, Die Finale
+
+### Ausgangssituation:
+Süßigkeiten in einem Raum? Nutella/ Nuss-Nougat-Creme
+Schüler brechen nachts in Schulgebäude (Pakhos Büro?, am Fenster) ein (Noten ausbessern)/ 21 Uhr, man muss bis 22 Uhr zurücksein
+#### TODO: einigen, warum genau die Schüler einbrechen (Kontext mit Beachtung des Zeitfensters schaffen)
+
+### Im Raum:
+- Stanley ist schon an (Sirene leuchtet)
+- Tür fällt ins Schloss
+- --> Schlüssel drehen zum Sirenen ausschalten
+
+### STANLEY fährt hoch
+- Vorstellung "Stromversorgung hergestellt", "Gesichtserkennung und automatische Speicherung aktiviert!!" oder einfach Video mit recording in der Ecke
+- --> Kamera schaltet sich an (man sieht sich selbst --> Kamerarätsel)
+- "visuelles tracking abgeschaltet, bisherige Aufnahme hochgeladen"...
+
+### Radiorätsel
+- Über verrauschte Audioaufname: 
+     Programmierer im System sind (Hörner und Leppla), welche Stanley "vermeidlich" als totale Überwachung programmiert haben
+- Nachricht missverständlich verrauscht
+- gibt den Eindruck: totale Überwachung am Berg
+- Code fürs Numbpad wird gegeben (üblicher COde, um auf das Gelände zu kommen)
+- Schwärmerei, was man auf der Website alles machen kann, warnung: man kann dort jedoch auch sachen löschen, also achtung
+
+### Code wird ins Numbpad eingegeben --> Screenshot von Webseite wird gezeigt
+- "Der Code wurde korrekt eingegeben, automatische Weiterleitung zu Website erfolt, Freischaltung des Tresors jetzt möglich"
+- Hintergründig wartet STANLEY schon auf das Klopfzeichen
+- IP-Adresse im Handy eingeben (Benutzer & Passwort eingeben)
+- Webseite = log-in zur STANLEY-Cloud            (Möglicherweise dort auch Rankings und Mails speichern, alle Daten hinterlegen)
+- Ziel: darauf Video zu löschen
+ 
+### im Menu: "letztes Video löschen" auswählen
+- löst das Penny-Video aus
+- Klopfrätsel
+- --> Video auf Webseite gelöscht (Cloudversion), "bitte denken sie daran, wenn die lokale Version (auf Stanley) nicht innerhalt von 30min gelöscht wird, gibt es einen Reload"
+- Schublade wird entriegelt (hier könnte auf der Webseite noch ein digitales Rätsel vorher angezeigt werden, dessen Lösung ins Numbpad eingegeben werden muss und dann die Schublade entriegelt) 
+
+Schublade enthält:
+- Umbrella-Ausweis & Schlüssel zum Fach mit der zugehörigen Rechnung
+- Blätterschnipsel von Zitzewitz?
+- Hinweis darauf, dass ihr eine Mail geschrieben werden muss, um STANLEY komplett zurückzusetzen
+       "sehr geehrter Werauchimmer, wenn Sie mal wieder Stanley zurücksetzten wollen...schreiben sie mir bitte eine gute Begründung?!"
+
+### Mail an Zitzewitz zu schreiben
+- erhählt Bestätigungscode, um STANLEY zurückzusetzen (Numbpad?)
+- löst Reaktion aus --> "wurde zurückgesetzt", "wieder einsatzbereit"
+---> Ziel, ihn ganz auszuschalten
+
+### Umbrella-Rätsel
+- ergibt Code für Klicker
+- End-Auflösungsvideo wird ausgestrahlt
+       "Eichhörnchenpopulation überwachen" (Spontane Idee Thronser)
+- STANLEY fährt herunter 
+
+
+
+
 
 ## Rätselreihenfolge
 Story Konzept STANLEY
@@ -57,9 +117,10 @@ Youthlessbox???
 Uv-licht und lampe!?
 Zweiter monitor? Zweiter pi! --- brille?! (Anne)
 
-# Story, evtl. die finale
-Süßigkeiten in einem Raum? Nutella/ Nuss-Nougat-Creme
-Schüler brechen nachts in Schulgebäude (Pakhos Büro?, am Fenster) ein (Noten ausbessern)/ 21 Uhr, man muss bis 22 Uhr zurücksein
+
+
+
+## alte Ausarbeitung mit eventuellen späteren Ergänzungen:
 
 Stanley ist schon an --> Sirene leuchtet schon / fängt an zu leuchten, wenn die Tür ins Schloss fällt (Schlüssel zum ausmachen der Sirene)
 Stanley fährt hoch (Vorstellung "Stromversorgung hergestellt", "Gesichtserkennung und automatische Speicherung aktiviert!!" oder einfach Video mit recording in der Ecke)
@@ -70,11 +131,16 @@ Wichtige Wörter um zu verstehen, dass es nicht so ist sind aus gerauscht --> to
 
 "Der Code wurde korrekt eingegeben, automatische Weiterleitung zu Website erfolt, Freischaltung des Tresors jetzt möglich" --> keine Tastatur und Maus --> IP-Adresse im Handy eingeben (Benutzer und Passwort eingeben) (Website: log-in zum Stanley Stystem --> man möchte dort das Video löschen)
        "Auf Webseite alle ... hinterlegt"
---> möglicherweise sogar direkten Zugriff auf die Webseite auf dem Raspberry (ist Touch)?!
-
-Autoidentifizierung des Menschseins mithilfe des Klopfens     (oder als Passwort-Hinweis)
+       
+ Autoidentifizierung des Menschseins mithilfe des Klopfens     (oder als Passwort-Hinweis)
        Auf Webseite Rangliste, wie schnell das schon geknackt wurde (+ am Ende Daten darauf hochgeladen)
 --> Video auf Webseite gelöscht (Cloudversion), "bitte denken sie daran, wenn die lokale Version (auf Stanley) nicht innerhalt von 30min gelöscht wird, gibt es einen Reload"
+
+
+--> Code, die zur vorderen Schublade führt:
+       darin zu finden: Schnipsel von Zitzewitz "sehr geehrter Werauchimmer, wenn Sie mal wieder Stanley zurücksetzten wollen...schreiben sie mir bitte eine gute Begründung?!"
+              - Umbrellaausweis, Schlüssel zum Fach mit der passenden Rechnung
+
 
 für Bestätigungscode, um Stanley zurückzusetzten --> Zitzewitz-Mail schreiben
 
@@ -83,8 +149,7 @@ Stanley zurückgesetzt, aber noch an --> über Umbrella-Rätsel --> Klicker-Code
 Ende: Video mit Auflösung "Eichhörnchenpopulation überwachen"
 
 
-
-eventuelle spätere Ergänzungen:
+---> ab hier wirklich neu
 
 Menu auf website: ein Menupunkt: Alte Aufnahmen löschen --> Berechtigung einfordern: an Geschäftsführung (Frau von Zitzewitz) schreiben (im Namen von Pakho mit guter Begrüngung --> Emails sammeln :) auf Homepage hochladen?!)
 
@@ -104,6 +169,8 @@ Koordinaten per Anzeige (Sebastian) und UV-Koordinaten (Schnittpunkt) auf Kartze
 
 Endszene: Hörner und Leppla sitzen entspannt auf dem Punkt der Karte (Karibik oder so) und witzeln über das Programm, Viedeos quatsch und werden alle gelöscht, Videos und Stanley werden deaktiviert --> Tür geht wieder auf
 
+
+
 ### Intentionen 
 
 Schüler:
@@ -118,6 +185,8 @@ merken, dass es gegen ihre Prinzipuen verstößt und wollen es abschalten (haben
 haben keine Einverständnis für Stanley und wollen ihn deshalb geheim halten
 denken sie, dass Schüler Hacker sind, die das Programm ausnutzen wollen
 haben Konzentrationsschwierigkeiten
+
+
 
 
 ## Namensbedeutung Stanley
@@ -142,9 +211,3 @@ Diese Methode prüft, ob das Rätsel gelöst wurde. Solange dies nicht geschehen
 Wenn das Rätsel gelöst wurde, wird die interact-Methode abgebrochen/beendet und die deinit-Methode aufgerufen.
 #### Einer Deinit-Methode:
 Hier werden alle in der Init-Methode initialisierten Sensoren etc. deinitialisiert.
-# Verbinden mit Stanley:  
-ssh pi@stanley.local  
-falls was gefragt wird: akzeptieren  
-Passwort: root  
-Juhuu verbunden  
-
