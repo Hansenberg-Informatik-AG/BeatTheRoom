@@ -1,7 +1,7 @@
 import time
 from threading import Thread
 import subprocess
-
+# KEINE UMLAUTE IN DIE DATEIEN
 
 class Controller(object):
     def __init__(self):
@@ -107,7 +107,7 @@ class Hint(object):
 
     def show(self):
         # implemtierung von filmabspielen muss noch hinzugefuegt werden
-        # argumente für omxplayer: -b -loop --no-osd
+        # argumente fuer omxplayer: -b -loop --no-osd
         # killall omxplayer, nach ende des hinweises
         subprocess.Popen("omxplayer",)
         print("showing hint "+str(self.file))
