@@ -9,7 +9,7 @@ class SchluesselRaetsel(beat_the_room.Puzzle):
     def init(self):
         # hinweis filmdatei
         # die Rätsel sind linear
-        os.system("setterm --blank force")
+        os.system("tvservice -o")
         self.hints = [beat_the_room.make_hint(
             self, "test.avi"), beat_the_room.make_hint(self, "hinweis2.avi")]
         # Rätsel erstellt von: Leo Wenzel
@@ -26,6 +26,7 @@ class SchluesselRaetsel(beat_the_room.Puzzle):
 
     def deinit(self):
         print("deinitlasing(42)")
+        os.system("tvservice -p")
         # DEINITIALISIERE SENSOREN / HARDWARE
         # GPIO.cleanup() etc
         GPIO.cleanup()
