@@ -20,8 +20,6 @@ class SchluesselRaetsel(beat_the_room.Puzzle):
 
     def interact(self):
         anfang = GPIO.input(21)
-        print("--- GPIO zu Beginn ---")
-        print(anfang)
         # sobald diese variable gesetzt ist, ist das Rätsel fertig! Hier muss wahrscheinlich immer eine while Schleife rein!
         while not self.solved:
             self.solved = GPIO.input(21) != anfang
