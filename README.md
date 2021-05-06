@@ -1,5 +1,15 @@
 # Beat the room
 
+## Ziel bis zu den Sommerferien:
+### Funktionierende Testversion mit allen benötigten Rätseln
+- Grundgerüst des Programm steht
+
+#### nach den Ferien: 
+- Verfeinerung, Optimierung des Programms
+- Storyumsetzung (Videos & Audios)
+
+
+
 # Story, Die Finale
 
 ### Ausgangssituation:
