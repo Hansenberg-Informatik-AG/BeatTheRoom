@@ -9,6 +9,36 @@
 - Storyumsetzung (Videos & Audios)
 
 
+#
+#
+# STANLEY Programm-Ablauf:
+1)	Sirenen an
+2)	Wartet auf Schlüssel
+3)	Beim Drehen, Sirenen aus
+4)	STANLEY „fährt hoch“  Video/Audio
+5)	Kamera an
+6)	Nachdem abgedeckt: Video/Audio-Reaktion von STANLEY
+- -- Radio Rätsel---
+7)	STANLEY wartet dabei auf Code im Numbpad (4028)
+8)	Reaktion von STANLEY?
+9)	Screenshot von Webseite gezeigt
+- -- Webseitenrätsel ---
+10)	STANLEY wartet auf das Klopfzeichen
+11)	Nach Klopfzeichen  STANLEYs Reaktion „…“
+12)	+ Schublade entriegelt (entweder direkt oder nach weiterer Codeeingabe ins Numbpad)
+- -- Mail schreiben ---
+13)	Wartet auf Bestätigungscode zum zurücksetzen (Numpad?)
+14)	Reaktion STANLEY  Video/Audio?
+- -- Umbrella-Rätsel---
+15)	STANLEY wartet auf Klicker-Code
+16)	End-Auflösungsvideo gezeigt
+17)	STANLEY fährt herunter
+
+#### Hinweise?!
+
+#
+#
+#
 
 # Story, Die Finale
 
@@ -99,36 +129,6 @@ Schublade enthält:
 - Endvideo drehen
 
 
-#
-#
-# STANLEY Programm-Ablauf:
-1)	Sirenen an
-2)	Wartet auf Schlüssel
-3)	Beim Drehen, Sirenen aus
-4)	STANLEY „fährt hoch“  Video/Audio
-5)	Kamera an
-6)	Nachdem abgedeckt: Video/Audio-Reaktion von STANLEY
-- -- Radio Rätsel---
-7)	STANLEY wartet dabei auf Code im Numbpad (4028)
-8)	Reaktion von STANLEY?
-9)	Screenshot von Webseite gezeigt
-- -- Webseitenrätsel ---
-10)	STANLEY wartet auf das Klopfzeichen
-11)	Nach Klopfzeichen  STANLEYs Reaktion „…“
-12)	+ Schublade entriegelt (entweder direkt oder nach weiterer Codeeingabe ins Numbpad)
-- -- Mail schreiben ---
-13)	Wartet auf Bestätigungscode zum zurücksetzen (Numpad?)
-14)	Reaktion STANLEY  Video/Audio?
-- -- Umbrella-Rätsel---
-15)	STANLEY wartet auf Klicker-Code
-16)	End-Auflösungsvideo gezeigt
-17)	STANLEY fährt herunter
-
-#### Hinweise?!
-
-#
-#
-#
 
 ## Aufgaben
 - Story festlegen
