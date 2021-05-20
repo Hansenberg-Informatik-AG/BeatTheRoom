@@ -67,8 +67,7 @@ class TasterRaetsel(beat_the_room.Puzzle):
     def checkClicks(self):
         self.printStates()
         for i in range(4):
-            if GPIO.input(self.ports[i]):
-                print('moo')
+            if not GPIO.input(self.ports[i]):
                 if not self.states[i]:
                     self.states[i] = True
                     return i
