@@ -81,7 +81,4 @@ class TasterRaetsel(beat_the_room.Puzzle):
             print(self.clickCounts[i], end="")
 
         print()
-    print("succsess")
-    Puzzle2.deinit()
-
-print("ende!")
+    
