@@ -12,7 +12,7 @@ class TasterRaetsel(beat_the_room.Puzzle):
 
         GPIO.setmode(GPIO.BCM)
 
-        self.id = 0  # platzhalter
+        self.id = 98  # platzhalter
         self.ports = [17, 18, 27, 22]
         for i in range(4):
             GPIO.setup(self.ports[i], GPIO.OUT)
@@ -81,16 +81,6 @@ class TasterRaetsel(beat_the_room.Puzzle):
             print(self.clickCounts[i], end="")
 
         print()
-
-
-# test code for testing purposes
-
-test = True
-if test:
-    Puzzle2 = TasterRaetsel()
-    Puzzle2.init()
-    time.sleep(1)
-    Puzzle2.interact()
     print("succsess")
     Puzzle2.deinit()
 
