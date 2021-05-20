@@ -11,10 +11,12 @@ class Controller(object):
         import SchluessekRaetsel
         import KameraRaetsel
         import RadioRaetsel
+        import TasterRaetsel
         # puzlle hier Importieren und zu der Liste hinzufuegen
 # die Reihenfolge hier ist auch die Reihenfolge der Puzzle!
         self.puzzles.append(SchluessekRaetsel.SchluesselRaetsel())
         self.puzzles.append(KameraRaetsel.KameraRaetsel())
+        self.puzzles.append(TasterRaetsel.TasterRaetsel())
         self.puzzles.append(Puzzle1.Puzzle1())
         self.puzzles.append(RadioRaetsel.RadioRaetsel())
         self.hint_queue = []
