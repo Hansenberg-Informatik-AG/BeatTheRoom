@@ -19,8 +19,9 @@ class Controller(object):
         self.puzzles.append(SchluessekRaetsel.SchluesselRaetsel())
         self.puzzles.append(KameraRaetsel.KameraRaetsel())
         #self.puzzles.append(TasterRaetsel.TasterRaetsel())
-        self.puzzles.append(Puzzle1.Puzzle1())
-        self.puzzles.append(RadioRaetsel.RadioRaetsel())
+        #self.puzzles.append(Puzzle1.Puzzle1())
+        #self.puzzles.append(RadioRaetsel.RadioRaetsel())
+        self.puzzles.append(TasterRaetsel.TasterRaetsel())
         self.hint_queue = []
         self.run_thread = Thread(target=self.run_func)
 
