@@ -7,6 +7,7 @@ import RPi.GPIO as GPIO
 class SchluesselRaetsel(beat_the_room.Puzzle):
 
     def init(self):
+        GPIO.cleanup()
         # hinweis filmdatei
         # die Rätsel sind linear
         os.system("tvservice -o")
@@ -27,4 +28,4 @@ class SchluesselRaetsel(beat_the_room.Puzzle):
     def deinit(self):
         print("deinitlasing(42)")
         os.system("tvservice -p")
-        GPIO.cleanup()
+        #GPIO.cleanup()
