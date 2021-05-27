@@ -35,9 +35,10 @@ class Klopfraetsel(beat_the_room.Puzzle):
         print("Klopfen")
         self.counter +=1
         if self.counter == 9:
-            self.lösen = True
-        if self.counter%3==0:
-            time.sleep(1)
+            self.solved = True
+        if self.counter%3==0 AND self.solved == False:
+            time.sleep(0.5)
+        print(self.counter)
 
     def deinit(self):
         print("deinitlasing(15)")
