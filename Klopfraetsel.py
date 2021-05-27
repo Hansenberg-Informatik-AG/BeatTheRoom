@@ -33,13 +33,19 @@ class Klopfraetsel(beat_the_room.Puzzle):
         print("Fertig(15)")
 
     def lösen(self, null):
-        print("Klopfen")
-        self.counter +=1
-        if self.counter == 9:
-            self.solved = True
-        if self.counter%3==0 and self.solved == False:
-            time.sleep(0.5)
-        print(self.counter)
+        try:
+            print("Klopfen")
+            self.counter +=1
+            if self.counter == 9:
+                self.solved = True
+            if self.counter%3==0 and self.solved == False:
+                time.sleep(0.5)
+            print(self.counter)
+           
+        except KeyboardInterrupt as e:
+            print(e)
+            GPIO.cleanup()
+            exit(-1)
 
     def deinit(self):
         print("deinitlasing(15)")
