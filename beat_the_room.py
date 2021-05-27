@@ -1,6 +1,7 @@
 import time
 from threading import Thread
 import subprocess
+import RPi.GPIO as GPIO
 # KEINE UMLAUTE IN DIE DATEIEN
 
 class Controller(object):
@@ -123,4 +124,9 @@ def make_hint(puzzle, file):
 
 
 if __name__ == "__main__":
-    Controller().run_thread.start()
+    try:
+        Controller().run_thread.start()
+    except KeyboardInterrupt as e:
+        print(e)
+        GPIO.cleanup()
+        exit(-1)
