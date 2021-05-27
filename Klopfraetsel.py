@@ -6,6 +6,7 @@ import RPi.GPIO as GPIO
 class Klopfraetsel(beat_the_room.Puzzle):
 
     def init(self):
+        GPIO.cleanup()
         # Annika und Johann Versuch zum Klopfrätsel
         # Sollte einmaliges Klopfen erkennen
         # hinweis filmdatei
