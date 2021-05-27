@@ -124,9 +124,4 @@ def make_hint(puzzle, file):
 
 
 if __name__ == "__main__":
-    try:
-        Controller().run_thread.start()
-    except KeyboardInterrupt as e:
-        print(e)
-        GPIO.cleanup()
-        exit(-1)
+    Controller().run_thread.start()
