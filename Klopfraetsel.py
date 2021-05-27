@@ -25,7 +25,7 @@ class Klopfraetsel(beat_the_room.Puzzle):
         print("interacting(15)")
         try:
             GPIO.add_event_detect(GPIO_PIN, GPIO.FALLING,
-                              callback=self.lösen, bouncetime=1000)
+                              callback=self.lösen, bouncetime=500)
         # time.sleep(10)
         # sobald diese variable gesetzt ist, ist das Rätsel fertig! Hier muss wahrscheinlich immer eine while Schleife rein!
             while self.solved == False:
