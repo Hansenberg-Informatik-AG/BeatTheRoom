@@ -7,7 +7,7 @@ class Controller(object):
     def __init__(self):
         self.puzzles = []
 
-        import Klopfrätsel
+        import Klopfraetsel
         import Puzzle1
         import SchluessekRaetsel
         import KameraRaetsel
