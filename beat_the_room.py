@@ -7,6 +7,7 @@ class Controller(object):
     def __init__(self):
         self.puzzles = []
 
+        import Klopfrätsel
         import Puzzle1
         import SchluessekRaetsel
         import KameraRaetsel
@@ -14,6 +15,7 @@ class Controller(object):
         import TasterRaetsel
         # puzlle hier Importieren und zu der Liste hinzufuegen
 # die Reihenfolge hier ist auch die Reihenfolge der Puzzle!
+        self.puzzles.append(Klopfrätsel.Klopfraetsel())
         self.puzzles.append(SchluessekRaetsel.SchluesselRaetsel())
         self.puzzles.append(KameraRaetsel.KameraRaetsel())
         #self.puzzles.append(TasterRaetsel.TasterRaetsel())
