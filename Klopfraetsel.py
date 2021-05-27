@@ -36,7 +36,7 @@ class Klopfraetsel(beat_the_room.Puzzle):
         self.counter +=1
         if self.counter == 9:
             self.solved = True
-        if self.counter%3==0 AND self.solved == False:
+        if self.counter%3==0 and self.solved == False:
             time.sleep(0.5)
         print(self.counter)
 
