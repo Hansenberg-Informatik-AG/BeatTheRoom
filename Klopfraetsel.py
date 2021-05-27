@@ -27,7 +27,7 @@ class Klopfraetsel(beat_the_room.Puzzle):
         # time.sleep(10)
         # sobald diese variable gesetzt ist, ist das Rätsel fertig! Hier muss wahrscheinlich immer eine while Schleife rein!
         while self.solved == False:
-            time.sleep(1)
+            time.sleep(0.001)
 
         print("Fertig(15)")
 
@@ -37,7 +37,7 @@ class Klopfraetsel(beat_the_room.Puzzle):
         if self.counter == 9:
             self.lösen = True
         if self.counter%3==0:
-            sleep(1000)
+            time.sleep(1)
 
     def deinit(self):
         print("deinitlasing(15)")
