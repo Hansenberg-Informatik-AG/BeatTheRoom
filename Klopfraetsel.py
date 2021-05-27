@@ -33,7 +33,7 @@ class Klopfraetsel(beat_the_room.Puzzle):
 
             print("Fertig(15)")
         
-        except KeyboardInterrupt as e:
+        except Exception as e:
             print(e)
             GPIO.cleanup()
             exit(-1)
