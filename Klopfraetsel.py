@@ -19,9 +19,9 @@ class Klopfraetsel(beat_the_room.Puzzle):
         
         GPIO_PIN = 20
         
-        self.lastKnock = time.time() * 1000
-        self.mayKnock = 0
+        self.lastKnock = 0
         self.counter = 0
+        
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(GPIO_PIN, GPIO.IN)
 
@@ -30,17 +30,18 @@ class Klopfraetsel(beat_the_room.Puzzle):
         try:
             GPIO.add_event_detect(GPIO_PIN, GPIO.FALLING, callback=self.lösen, bouncetime=350)
           
-        
         except Exception as e:
             print(e)
             GPIO.cleanup()
             exit(-1)
 
     def lösen(self, value):
-        print("Übergebener Value: " + str(value))
         if self.solved == True:
             return 0
         
+        print("Counter:   " + str(self.counter))
+        print("Time:      " + str(time.time() * 1000 + 500))
+        print("lastKnock: " + str(self.lastKnock))
         if (self.lastKnock < time.time() * 1000 + 500 and self.counter % 3 == 0):
             print("MAY NOT KNOCK")
             self.counter = 0
