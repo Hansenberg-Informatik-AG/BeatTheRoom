@@ -24,7 +24,7 @@ class Klopfraetsel(beat_the_room.Puzzle):
     def interact(self):
         print("interacting(15)")
         try:
-            GPIO.add_event_detect(GPIO_PIN, GPIO.FALLING, callback=self.lösen, bouncetime=1000)
+            GPIO.add_event_detect(GPIO_PIN, GPIO.FALLING, callback=self.lösen, bouncetime=100)
           
         
         except Exception as e:
