@@ -26,10 +26,10 @@ class Klopfraetsel(beat_the_room.Puzzle):
                               callback=self.lösen, bouncetime=1000)
         # time.sleep(10)
         # sobald diese variable gesetzt ist, ist das Rätsel fertig! Hier muss wahrscheinlich immer eine while Schleife rein!
-        while self.solved == False:
-            time.sleep(0.001)
+        #while self.solved == False:
+        #   time.sleep(0.001)
 
-        print("Fertig(15)")
+        #print("Fertig(15)")
 
     def lösen(self, null):
         print("Klopfen")
