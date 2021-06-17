@@ -23,7 +23,7 @@ class Klopfraetsel(beat_the_room.Puzzle):
     def interact(self):
         print("interacting(15)")
         GPIO.add_event_detect(GPIO_PIN, GPIO.FALLING,
-                              callback=self.lösen, bouncetime=1000)
+                              callback=self.lösen, bouncetime=100)
         # time.sleep(10)
         # sobald diese variable gesetzt ist, ist das Rätsel fertig! Hier muss wahrscheinlich immer eine while Schleife rein!
         #while self.solved == False:
@@ -34,7 +34,7 @@ class Klopfraetsel(beat_the_room.Puzzle):
     def lösen(self, null):
         print("Klopfen")
         self.counter +=1
-        if self.counter == 9:
+        if self.counter >= 9:
             self.lösen = True
         if self.counter%3==0:
             time.sleep(1)
