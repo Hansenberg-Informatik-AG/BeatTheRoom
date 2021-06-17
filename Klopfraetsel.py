@@ -34,7 +34,9 @@ class Klopfraetsel(beat_the_room.Puzzle):
 
     def lösen(self, null):
         if self.solved == True:
-                pass
+            print("Passing lösen")
+            pass
+            print("Passing failed")
         try:
             self.counter +=1
             print("Klopfen erkannt (" + str(self.counter) + ". Klopfen)")
