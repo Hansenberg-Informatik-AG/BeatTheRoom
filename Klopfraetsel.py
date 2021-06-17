@@ -13,10 +13,10 @@ class Klopfraetsel(beat_the_room.Puzzle):
         # die Rätsel sind linear
         self.hints = [beat_the_room.make_hint(
             self, "test.avi"), beat_the_room.make_hint(self, "hinweis2.avi")]
-        # print("Init(15)")
+        print("Init(15)")
         # INITIALISIERE SENSOREN / HARDWARE
         global GPIO_PIN
-        GPIO_PIN = 15
+        GPIO_PIN = 20
         self.counter = 0
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(GPIO_PIN, GPIO.IN)
@@ -55,6 +55,6 @@ class Klopfraetsel(beat_the_room.Puzzle):
             exit(-1)
 
     def deinit(self):
-        print("deinitlasing(15)")
+        print("deinit(15)")
         # DEINITIALISIERE SENSOREN / HARDWARE
         GPIO.cleanup()
