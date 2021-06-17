@@ -49,14 +49,14 @@ class Klopfraetsel(beat_the_room.Puzzle):
         
         try:
             self.counter +=1
-            self.lastKnock = time.time() * 1000
             print("Klopfen erkannt (" + str(self.counter) + ". Klopfen)")
             
             if self.counter >= 9:
                 self.solved = True
                 print("Klopfrätsel wurde gelöst")
-            if (self.counter % 3) == 0 and self.solved == False:
+            if (self.counter % 3) == 0 and self.solved == False and self.lastKnock < time.time() * 1000 + 500:
                 print("WRONG KNOCK")
+                self.lastKnock = time.time() * 1000
                 self.mayKnock = 1
                 time.sleep(0.5)
                 self.mayKnock = 0
