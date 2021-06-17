@@ -24,7 +24,7 @@ class Klopfraetsel(beat_the_room.Puzzle):
     def interact(self):
         print("interacting(15)")
         try:
-            GPIO.add_event_detect(GPIO_PIN, GPIO.FALLING, callback=self.lösen, bouncetime=10000)
+            GPIO.add_event_detect(GPIO_PIN, GPIO.FALLING, callback=self.lösen, bouncetime=100)
           
         
         except Exception as e:
@@ -32,7 +32,9 @@ class Klopfraetsel(beat_the_room.Puzzle):
             GPIO.cleanup()
             exit(-1)
 
-    def lösen(self, null):
+    def lösen(self, value, null):
+        print("Übergebener Value: " + str(value))
+        exit(-1)
         if self.solved == True:
             print("return lösen")
             return 0
