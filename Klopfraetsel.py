@@ -28,7 +28,7 @@ class Klopfraetsel(beat_the_room.Puzzle):
     def interact(self):
         print("interacting(15)")
         try:
-            GPIO.add_event_detect(GPIO_PIN, GPIO.FALLING, callback=self.lösen, bouncetime=400)
+            GPIO.add_event_detect(GPIO_PIN, GPIO.FALLING, callback=self.lösen, bouncetime=350)
           
         
         except Exception as e:
@@ -40,12 +40,11 @@ class Klopfraetsel(beat_the_room.Puzzle):
         print("Übergebener Value: " + str(value))
         if self.solved == True:
             return 0
-        print(self.mayKnock)
-        if self.mayKnock == 1:
+        
+        if (self.lastKnock < time.time() * 1000 + 500 and self.counter % 3 == 0):
             print("MAY NOT KNOCK")
             self.counter = 0
-            self.mayKnock = 0
-            # return 0 , only if the knock should not count as "first knock" of the next try
+            return 0 # only if the knock should not count as "first knock" of the next try
         
         try:
             self.counter +=1
@@ -54,11 +53,6 @@ class Klopfraetsel(beat_the_room.Puzzle):
             if self.counter >= 9:
                 self.solved = True
                 print("Klopfrätsel wurde gelöst")
-            if (self.counter % 3) == 0 and self.solved == False and self.lastKnock < time.time() * 1000 + 500:
-                self.mayKnock = 1
-                self.lastKnock = time.time() * 1000
-                time.sleep(0.5)
-                self.mayKnock = 0
            
         except KeyboardInterrupt as e:
             print("Keyboard Interrupted")
