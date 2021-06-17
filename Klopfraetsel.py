@@ -38,7 +38,7 @@ class Klopfraetsel(beat_the_room.Puzzle):
 
     def lösen(self, value):
         print("Übergebener Value: " + str(value))
-        if self.solved == True OR self.lastKnock == 1:
+        if self.solved == True or self.lastKnock == 1:
             return 0
         try:
             self.counter +=1
