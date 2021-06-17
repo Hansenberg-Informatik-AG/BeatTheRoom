@@ -40,6 +40,7 @@ class Klopfraetsel(beat_the_room.Puzzle):
         print("Übergebener Value: " + str(value))
         if self.solved == True:
             return 0
+        print(self.mayKnock)
         if self.mayKnock == 1:
             print("MAY NOT KNOCK")
             self.counter = 0
