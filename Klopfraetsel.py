@@ -18,8 +18,9 @@ class Klopfraetsel(beat_the_room.Puzzle):
         global GPIO_PIN
         
         GPIO_PIN = 20
-        self.lastKnock = time.time() * 1000
         
+        self.lastKnock = time.time() * 1000
+        self.mayKnock = 0
         self.counter = 0
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(GPIO_PIN, GPIO.IN)
@@ -42,6 +43,7 @@ class Klopfraetsel(beat_the_room.Puzzle):
         if self.mayKnock == False:
             self.counter = 0
             self.mayKnock = 0
+            # return 0 , only if the knock should not count as "first knock" of the next try
         
         try:
             self.counter +=1
