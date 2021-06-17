@@ -37,7 +37,7 @@ class Klopfraetsel(beat_the_room.Puzzle):
                 pass
         try:
             self.counter +=1
-            print("Klopfen erkannt (" + self.counter + ". Klopfen)")
+            print("Klopfen erkannt (" + str(self.counter) + ". Klopfen)")
             
             if self.counter >= 9:
                 self.solved = True
