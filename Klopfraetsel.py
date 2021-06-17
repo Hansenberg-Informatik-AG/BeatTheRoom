@@ -45,8 +45,8 @@ class Klopfraetsel(beat_the_room.Puzzle):
             if self.counter >= 9:
                 self.solved = True
                 print("Klopfrätsel wurde gelöst")
-            #if self.counter%3==0 and self.solved == False:
-             #   time.sleep(0.5)
+            if self.counter%3==0 and self.solved == False:
+                time.sleep(0.5)
            
         except KeyboardInterrupt as e:
             print("Keyboard Interrupted")
