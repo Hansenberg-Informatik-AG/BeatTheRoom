@@ -47,6 +47,8 @@ class Klopfraetsel(beat_the_room.Puzzle):
             self.counter = 0
             return 0 # only if the knock should not count as "first knock" of the next try
         
+        self.lastKnock = time.time() * 1000
+        
         try:
             self.counter +=1
             print("Klopfen erkannt (" + str(self.counter) + ". Klopfen)")
