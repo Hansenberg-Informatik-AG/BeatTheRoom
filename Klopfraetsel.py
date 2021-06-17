@@ -32,7 +32,7 @@ class Klopfraetsel(beat_the_room.Puzzle):
             GPIO.cleanup()
             exit(-1)
 
-    def lösen(self, value, null):
+    def lösen(self, null, value):
         print("Übergebener Value: " + str(value))
         exit(-1)
         if self.solved == True:
