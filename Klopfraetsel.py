@@ -18,7 +18,7 @@ class Klopfraetsel(beat_the_room.Puzzle):
         global GPIO_PIN
         
         GPIO_PIN = 20
-        self.lastKnock = 0
+        self.lastKnock = time.time() * 1000
         
         self.counter = 0
         GPIO.setmode(GPIO.BCM)
@@ -37,19 +37,24 @@ class Klopfraetsel(beat_the_room.Puzzle):
 
     def lösen(self, value):
         print("Übergebener Value: " + str(value))
-        if self.solved == True or self.lastKnock == 1:
+        if self.solved == True:
             return 0
+        if self.mayKnock == False:
+            self.counter = 0
+            self.mayKnock = 0
+        
         try:
             self.counter +=1
+            self.lastKnock = time.time() * 1000
             print("Klopfen erkannt (" + str(self.counter) + ". Klopfen)")
             
             if self.counter >= 9:
                 self.solved = True
                 print("Klopfrätsel wurde gelöst")
-            if self.counter%3==0 and self.solved == False:
-                self.lastKnock = 1
+            if (self.counter % 3) == 0 and self.solved == False:
+                self.mayKnock = 1
                 time.sleep(0.5)
-                self.lastKnock = 0
+                self.mayKnock = 0
            
         except KeyboardInterrupt as e:
             print("Keyboard Interrupted")
