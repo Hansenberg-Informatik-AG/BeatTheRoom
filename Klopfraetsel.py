@@ -16,10 +16,9 @@ class Klopfraetsel(beat_the_room.Puzzle):
         print("Init(15)")
         # INITIALISIERE SENSOREN / HARDWARE
         global GPIO_PIN
-        global lastKnock
         
         GPIO_PIN = 20
-        lastKnock = 0
+        self.lastKnock = 0
         
         self.counter = 0
         GPIO.setmode(GPIO.BCM)
