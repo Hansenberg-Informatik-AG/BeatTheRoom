@@ -28,7 +28,7 @@ class Klopfraetsel(beat_the_room.Puzzle):
     def interact(self):
         print("interacting(15)")
         try:
-            GPIO.add_event_detect(GPIO_PIN, GPIO.FALLING, callback=self.lösen, bouncetime=150)
+            GPIO.add_event_detect(GPIO_PIN, GPIO.FALLING, callback=self.lösen, bouncetime=200)
           
         
         except Exception as e:
@@ -41,6 +41,7 @@ class Klopfraetsel(beat_the_room.Puzzle):
         if self.solved == True:
             return 0
         if self.mayKnock == 1:
+            print("MAY NOT KNOCK")
             self.counter = 0
             self.mayKnock = 0
             # return 0 , only if the knock should not count as "first knock" of the next try
