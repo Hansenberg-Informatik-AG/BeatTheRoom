@@ -76,6 +76,7 @@ Schüler brechen nachts in Schulgebäude (Pakhos Büro?, am Fenster) ein (Noten 
 - Audioaufnahme für das Radiorätsel!!! (Text schreiben, aufnehmen, verrauschen)
 - Radiorätsel allgemein
 - Numbpad
+- Scheinwerfer statt Taschenlampe?!
 
 
 ### Code wird ins Numbpad eingegeben --> Screenshot von Webseite wird gezeigt
@@ -106,6 +107,7 @@ Schublade enthält:
 - Schublade mit allem nötigen füllen
 - Rätsel Zitewitzüberleitung machen
 - möglicherweise noch Rätsel zur Schubladenöffnung
+- Stück Fils oder Holz oben auf STANLEY (Intuitiever, um zu wissen, wo man klopfen soll)
 
 
 ### Mail an Zitzewitz zu schreiben
