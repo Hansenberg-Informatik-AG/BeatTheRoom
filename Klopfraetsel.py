@@ -7,8 +7,6 @@ class Klopfraetsel(beat_the_room.Puzzle):
 
     def init(self):
         GPIO.cleanup()
-        # Annika und Johann Versuch zum Klopfrätsel
-        # Sollte einmaliges Klopfen erkennen
         # hinweis filmdatei
         # die Rätsel sind linear
         self.hints = [beat_the_room.make_hint(
