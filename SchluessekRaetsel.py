@@ -8,7 +8,6 @@ import RPi.GPIO as GPIO
 # U ist zu hoch, also passen wir R an
 # an 5 Volt anschluss --> Widerstand vorschalten
 
-
 class SchluesselRaetsel(beat_the_room.Puzzle):
 
     def init(self):
