@@ -44,7 +44,7 @@ class Klopfraetsel(beat_the_room.Puzzle):
         
         print ("Counter:   " + str(self.counter))
         print ("Time:      " + str(time.time() - self.anfang))
-        print ("lastKnock: " + str(self.lastKnock))
+        print ("lastKnock: " + str(time.time() - self.lastKnock))
         if (self.lastKnock + 500 > time.time() * 1000 and self.counter % 3 == 0):
             print("MAY NOT KNOCK")
             self.counter = 0
