@@ -23,7 +23,7 @@ class Klopfraetsel(beat_the_room.Puzzle):
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(GPIO_PIN, GPIO.IN)
         
-        self.anfang=time.time()
+        #self.anfang=time.time()
 
     def interact(self):
         print("interacting(15)")
@@ -40,7 +40,7 @@ class Klopfraetsel(beat_the_room.Puzzle):
             return 0
         
         print ("Counter:   " + str(self.counter))
-        print ("Time:      " + str( 1000 + 500))
+        print ("Time:      " + str(time.time() * 1000 + 500))
         print ("lastKnock: " + str(self.lastKnock))
         if (self.lastKnock + 500 > time.time() * 1000 and self.counter % 3 == 0):
             print("MAY NOT KNOCK")
