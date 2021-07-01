@@ -40,6 +40,8 @@ class Klopfraetsel(beat_the_room.Puzzle):
         if self.solved == True:
             return 0
         
+        print (self.anfang)
+        
         print ("Counter:   " + str(self.counter))
         print ("Time:      " + str(time.time() * 1000 + 500 - self.anfang))
         print ("lastKnock: " + str(self.lastKnock))
