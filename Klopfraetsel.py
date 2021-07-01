@@ -39,9 +39,9 @@ class Klopfraetsel(beat_the_room.Puzzle):
         if self.solved == True:
             return 0
         
-        print ("Counter:   " + str(self.counter())
+        print ("Counter:   " + str(self.counter)
         print ("Time:      " + str(time.time() * 1000 + 500))
-        print ("lastKnock: " + str(self.lastKnock))
+        print ("lastKnock: " + str(self.lastKnock)
         if (self.lastKnock + 500 > time.time() * 1000 and self.counter % 3 == 0):
             print("MAY NOT KNOCK")
             self.counter = 0
