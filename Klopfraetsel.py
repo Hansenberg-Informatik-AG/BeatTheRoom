@@ -19,11 +19,12 @@ class Klopfraetsel(beat_the_room.Puzzle):
         
         self.lastKnock = 0
         self.counter = 0
+        self.anfang = 0
         
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(GPIO_PIN, GPIO.IN)
         
-        #self.anfang=time.time()
+        self.anfang = time.time()
 
     def interact(self):
         print("interacting(15)")
