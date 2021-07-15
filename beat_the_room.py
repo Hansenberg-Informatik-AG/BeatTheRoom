@@ -1,6 +1,7 @@
 import time
 from threading import Thread
 import subprocess
+import RPi.GPIO as GPIO
 # KEINE UMLAUTE IN DIE DATEIEN
 
 class Controller(object):
@@ -15,10 +16,9 @@ class Controller(object):
         import TasterRaetsel
         # puzlle hier Importieren und zu der Liste hinzufuegen
 # die Reihenfolge hier ist auch die Reihenfolge der Puzzle!
-        # self.puzzles.append(Klopfraetsel.Klopfraetsel())
         self.puzzles.append(SchluessekRaetsel.SchluesselRaetsel())
         self.puzzles.append(KameraRaetsel.KameraRaetsel())
-        #self.puzzles.append(TasterRaetsel.TasterRaetsel())
+        self.puzzles.append(Klopfraetsel.Klopfraetsel())
         #self.puzzles.append(Puzzle1.Puzzle1())
         #self.puzzles.append(RadioRaetsel.RadioRaetsel())
         self.puzzles.append(TasterRaetsel.TasterRaetsel())
