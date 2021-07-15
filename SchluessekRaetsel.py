@@ -3,6 +3,10 @@ import beat_the_room
 import os
 import RPi.GPIO as GPIO
 
+# information zu Alarmanlage, korrekte berechnung des Widerstands, nutzung des URI-Gesetzes (Jonathan Doll fragen)
+# Wir wollen, dass I konstant ist --> U und R anpassen
+# U ist zu hoch, also passen wir R an
+# an 5 Volt anschluss --> Widerstand vorschalten
 
 class SchluesselRaetsel(beat_the_room.Puzzle):
 

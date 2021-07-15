@@ -74,6 +74,7 @@ class TasterRaetsel(beat_the_room.Puzzle):
                     return i
             else:
                 self.states[i] = False
+                print("?")
 
         return -1
 
