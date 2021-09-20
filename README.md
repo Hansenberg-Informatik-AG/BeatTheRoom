@@ -292,3 +292,7 @@ Hier werden alle in der Init-Methode initialisierten Sensoren etc. deinitialisie
 ssh pi@stanley.local
 password LW, AK, ST fragen
 IP-Adresse: 192.168.99.40
+
+## Regelmäßige Updates
+sudo apt-get update
+sudo apt-get upgrade
