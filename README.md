@@ -289,4 +289,6 @@ Wenn das Rätsel gelöst wurde, wird die interact-Methode abgebrochen/beendet un
 Hier werden alle in der Init-Methode initialisierten Sensoren etc. deinitialisiert.
 
 ## Zugang zu Stanley
-
+ssh pi@stanley.local
+password LW, AK, ST fragen
+IP-Adresse: 192.168.99.40
