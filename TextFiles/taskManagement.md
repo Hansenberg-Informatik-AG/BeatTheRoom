@@ -10,3 +10,4 @@ Tipps
 
 Einführung: Was ist Stanley? Ansprechpartner (LW, AK, ST, JS)
 Finger weg von alles was ihr nicht könnt, lieber Hilfe suchen und es dann gemeinsam machen
+ 
