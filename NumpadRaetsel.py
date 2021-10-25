@@ -11,13 +11,13 @@ class NumpadRaetsel(beat_the_room.Puzzle):
           ["*", "0", "#", "D"]]
 
 
-    self.zeile = [7, 8, 1, 25]
-    self.spalte = [24, 23, 15, 14]
-
     password = ["4", "0", "2", "8"]
 
     def init(self):
         gpio.cleanup()
+        
+        self.zeile = [7, 8, 1, 25]
+        self.spalte = [24, 23, 15, 14]
 
         gpio.setmode(gpio.BCM)
         gpio.setwarnings(False)
