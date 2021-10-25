@@ -33,8 +33,8 @@ class NumpadRaetsel(beat_the_room.Puzzle):
       print("Schleife")
       z=0
       while True:
-            z = z + 1
-            print(z)
+          z = z + 1
+          print(z)
           for j in range(4):
               gpio.output(self.spalte[j], 0)
               for i in range(4):
