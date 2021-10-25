@@ -51,8 +51,9 @@ class NumpadRaetsel(beat_the_room.Puzzle):
         lastInputList = []
         while not self.solved:
             if lastInputList[-4:] != self.password:
-                    lastInputList.append(self.readKeypad())
-                    print(lastInputList)
+                lastInputList.append(self.readKeypad())
+                print("Hier")
+                print(lastInputList)
             else:
                 self.solved = True
 
