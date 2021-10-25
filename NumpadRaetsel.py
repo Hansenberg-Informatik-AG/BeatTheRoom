@@ -32,6 +32,7 @@ class NumpadRaetsel(beat_the_room.Puzzle):
     def readKeypad(self):
       print("Schleife")
       while True:
+          
           for j in range(4):
               gpio.output(self.spalte[j], 0)
               for i in range(4):
