@@ -11,7 +11,7 @@ class Klopfraetsel(beat_the_room.Puzzle):
         # die Rätsel sind linear
         self.hints = [beat_the_room.make_hint(
             self, "test.avi"), beat_the_room.make_hint(self, "hinweis2.avi")]
-        print("Init(15)")
+        print("Init(16)")
         # INITIALISIERE SENSOREN / HARDWARE
         global GPIO_PIN
         
