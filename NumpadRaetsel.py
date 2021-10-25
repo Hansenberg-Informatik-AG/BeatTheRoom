@@ -40,9 +40,11 @@ class NumpadRaetsel(beat_the_room.Puzzle):
               for i in range(4):
                   if gpio.input(self.zeile[i]) == 0:
                       benutzerEingabe = self.matrix[i][j]
+                      if benutzerEingabe == "*":
+                          continue
                       print("Taste")
                       print(benutzerEingabe)
-                      while benutzerEingabe != "*" and gpio.input(self.zeile[i]) == 0:
+                      while gpio.input(self.zeile[i]) == 0:
                           pass
                       return benutzerEingabe
               gpio.output(self.spalte[j], 1)
