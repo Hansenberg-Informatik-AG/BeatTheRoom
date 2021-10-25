@@ -31,17 +31,14 @@ class NumpadRaetsel(beat_the_room.Puzzle):
 
     def readKeypad(self):
       print("Schleife")
-      z=0
       while True:
-          z = z + 1
-          print(z)
           for j in range(4):
               gpio.output(self.spalte[j], 0)
               for i in range(4):
                   if gpio.input(self.zeile[i]) == 0:
                       benutzerEingabe = self.matrix[i][j]
-                      if benutzerEingabe == "*":
-                          continue
+                      #if benutzerEingabe == "*":
+                       #   continue
                       print("Taste")
                       print(benutzerEingabe)
                       while gpio.input(self.zeile[i]) == 0:
