@@ -14,7 +14,7 @@ class Controller(object):
         import KameraRaetsel
         import RadioRaetsel
         import TasterRaetsel
-        import NumpadRaetsel
+        #import NumpadRaetsel
         # puzlle hier Importieren und zu der Liste hinzufuegen
 # die Reihenfolge hier ist auch die Reihenfolge der Puzzle!
         self.puzzles.append(NumpadRaetsel.NumpadRaetsel())
