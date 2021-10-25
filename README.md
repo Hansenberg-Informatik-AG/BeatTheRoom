@@ -8,6 +8,8 @@
 - Verfeinerung, Optimierung des Programms
 - Storyumsetzung (Videos & Audios)
 
+#### HINWEISE ZUR INSTALLATION:
+Use `pip3` for installing python Software instead of `pip`
 
 #
 #
