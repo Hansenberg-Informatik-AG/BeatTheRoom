@@ -11,8 +11,8 @@ class NumpadRaetsel(beat_the_room.Puzzle):
           ["*", "0", "#", "D"]]
 
 
-    zeile = [8, 25, 7, 24]
-    spalte = [23, 18, 15, 14]
+    self.zeile = [8, 25, 7, 24]
+    self.spalte = [23, 18, 15, 14]
 
     password = ["4", "0", "2", "8"]
 
