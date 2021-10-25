@@ -47,7 +47,7 @@ class Klopfraetsel(beat_the_room.Puzzle):
         print ("Time:      " + str(time.time() - self.anfang))
         print ("lastKnock: " + str(time.time() - self.lastKnock))
         
-        if (time.time() - self.lastKnock < 0.01):
+        if (time.time() - self.lastKnock < 0.1):
             print("-----to short on previous knock-----")
         
         if (time.time() - self.lastKnock < 1 and self.counter % 3 == 0 and self.counter != 0):
