@@ -5,19 +5,19 @@ import time
 
 class NumpadRaetsel(beat_the_room.Puzzle):
 
-    matrix = [["1","2","3", "A"],
-              ["4","5","6", "B"],
-          ["7","8","9", "C"],
-          ["*", "0", "#", "D"]]
-
-
-    password = ["4", "0", "2", "8"]
-
     def init(self):
         gpio.cleanup()
         
         self.zeile = [7, 8, 1, 25]
         self.spalte = [24, 23, 15, 14]
+        
+        self.matrix = [["1","2","3", "A"],
+          ["4","5","6", "B"],
+          ["7","8","9", "C"],
+          ["*", "0", "#", "D"]]
+
+
+        self.password = ["4", "0", "2", "8"]
 
         gpio.setmode(gpio.BCM)
         gpio.setwarnings(False)
@@ -34,7 +34,7 @@ class NumpadRaetsel(beat_the_room.Puzzle):
               gpio.output(self.spalte[j], 0)
               for i in range(4):
                   if gpio.input(self.zeile[i]) == 0:
-                      benutzerEingabe = matrix[i][j]
+                      benutzerEingabe = self.matrix[i][j]
                       while gpio.input(self.zeile[i]) == 0:
                           pass
                       return benutzerEingabe
@@ -46,7 +46,7 @@ class NumpadRaetsel(beat_the_room.Puzzle):
     def interact(self):
         lastInputList = []
         while not self.solved:
-            if lastInputList[-4:] != password:
+            if lastInputList[-4:] != self.password:
                     lastInputList.append(self.readKeypad())
                     print(lastInputList)
             else:
