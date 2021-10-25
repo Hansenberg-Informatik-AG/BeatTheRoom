@@ -36,7 +36,11 @@ class Klopfraetsel(beat_the_room.Puzzle):
             print(e)
             GPIO.cleanup()
             exit(-1)
-
+    def fehler(self, message):
+        print("---> Es kam zu einem unerwartetem Fehler <---")
+        print("Fehlermeldung: " + message)
+        self.counter = 0
+        
     def lösen(self, value):
         if self.solved == True:
             return 0
@@ -54,13 +58,11 @@ class Klopfraetsel(beat_the_room.Puzzle):
             return 0
         
         if (time.time() - self.lastKnock < 0.3 and self.counter % 3 == 0 and self.counter != 0):
-            print("MAY NOT KNOCK")
-            self.counter = 0
+            self.fehler("kein Klopfen")
             return 0 # only if the knock should not count as "first knock" of the next try
         
         if (time.time() - self.lastKnock > 2 and self.counter % 3 != 0 and self.counter != 0):
-            self.counter = 0
-            print("too long")
+            self.fehler("zu lange gewartet")
             return 0 # only if the knock should not count as "first knock" of the next try
         
         self.lastKnock = time.time()
