@@ -23,22 +23,22 @@ class NumpadRaetsel(beat_the_room.Puzzle):
         gpio.setwarnings(False)
 
         for j in range(4):
-            gpio.setup(spalte[j], gpio.OUT)
-            gpio.output(spalte[j], 1)
-            gpio.setup(zeile[j],gpio.IN,
+            gpio.setup(self.spalte[j], gpio.OUT)
+            gpio.output(self.spalte[j], 1)
+            gpio.setup(self.zeile[j],gpio.IN,
                    pull_up_down=gpio.PUD_UP)
 
     def readKeypad(self):
       while True:
           for j in range(4):
-              gpio.output(spalte[j], 0)
+              gpio.output(self.spalte[j], 0)
               for i in range(4):
-                  if gpio.input(zeile[i]) == 0:
+                  if gpio.input(self.zeile[i]) == 0:
                       benutzerEingabe = matrix[i][j]
-                      while gpio.input(zeile[i]) == 0:
+                      while gpio.input(self.zeile[i]) == 0:
                           pass
                       return benutzerEingabe
-              gpio.output(spalte[j], 1)
+              gpio.output(self.spalte[j], 1)
       return False
 
 
