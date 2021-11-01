@@ -9,7 +9,7 @@ class NumpadRaetsel(beat_the_room.Puzzle):
         gpio.cleanup()
         print("Hi")
         
-        self.zeile = [31, 11, 10, 27]
+        self.zeile = [31, 11, 10, 26]
         self.spalte = [5, 22, 16, 15]
         
         self.matrix = [["1","2","3", "A"],
