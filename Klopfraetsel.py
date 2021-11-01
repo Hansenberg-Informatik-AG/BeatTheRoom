@@ -20,6 +20,8 @@ class Klopfraetsel(beat_the_room.Puzzle):
         self.lastKnock = 0
         self.counter = 0
         self.anfang = 0
+        self.fehler = true
+        self.fehlerTime = 0
         
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(GPIO_PIN, GPIO.IN)
@@ -39,6 +41,8 @@ class Klopfraetsel(beat_the_room.Puzzle):
     def fehler(self, message):
         print("---> Es kam zu einem unerwartetem Fehler <---")
         print("Fehlermeldung: " + message)
+        self.fehler = true
+        self.fehlerTime = time.time()
         self.counter = 0
         
     def lösen(self, value):
@@ -52,6 +56,8 @@ class Klopfraetsel(beat_the_room.Puzzle):
         print ("lastKnock: " + str(time.time() - self.lastKnock))
         
         #print("----" + time.time() - self.lastKnock + "----")
+        if (self.fehler and time.time()-self.fehlerTime < 0.3):
+            return 0
         
         if (time.time() - self.lastKnock < 0.1):
             print("-----to short on previous knock-----")
