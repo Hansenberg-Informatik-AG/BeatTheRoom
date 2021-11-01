@@ -72,6 +72,8 @@ class Klopfraetsel(beat_the_room.Puzzle):
             return 0 # only if the knock should not count as "first knock" of the next try
         
         self.lastKnock = time.time()
+        self.fehler = false
+        self.fehlerTime = 0
         
         try:
             self.counter +=1
