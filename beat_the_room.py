@@ -18,8 +18,8 @@ class Controller(object):
         # puzlle hier Importieren und zu der Liste hinzufuegen
 # die Reihenfolge hier ist auch die Reihenfolge der Puzzle!
         #self.puzzles.append(NumpadRaetsel.NumpadRaetsel())
-        #self.puzzles.append(SchluessekRaetsel.SchluesselRaetsel())
-        #self.puzzles.append(KameraRaetsel.KameraRaetsel()) # TODO: Wieder aufrufen
+        self.puzzles.append(SchluessekRaetsel.SchluesselRaetsel())
+        self.puzzles.append(KameraRaetsel.KameraRaetsel()) # TODO: Wieder aufrufen
         self.puzzles.append(Klopfraetsel.Klopfraetsel())
         #self.puzzles.append(Puzzle1.Puzzle1())
         #self.puzzles.append(RadioRaetsel.RadioRaetsel())
