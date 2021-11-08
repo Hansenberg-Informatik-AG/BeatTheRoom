@@ -20,10 +20,10 @@ class NumpadRaetsel(beat_the_room.Puzzle):
         
         # Keypad
         self.matrix = [
-            [1,2,3,"A"],
-            [4,5,6,"B"],
-            [7,8,9,"C"],
-            ["*",0,"#","D"]
+            [1,4,7,"*"],
+            [2,5,8,0],
+            [3,6,9,"#"],
+            ["A","B","C","D"]
         ]
 
         self.password = ["4", "0", "2", "8"]
@@ -68,10 +68,12 @@ class NumpadRaetsel(beat_the_room.Puzzle):
             time.sleep(0.2)
             
             if lastInputList[-4:] != self.password:
-                number = self.readKeypad(1, [1,2,3,"A"])
-                lastInputList.append(number)
-                print("Hier")
-                print(lastInputList)
+                for i in range(4):
+                    number = self.readKeypad(i, self.matrix[i])
+                
+                    lastInputList.append(number)
+                    print("Hier")
+                    print(lastInputList)
             
             else:
                 self.solved = True
