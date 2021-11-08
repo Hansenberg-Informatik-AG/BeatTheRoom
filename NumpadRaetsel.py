@@ -3,6 +3,10 @@ from pad4pi import rpi_gpio
 import RPi.GPIO as gpio
 import time
 
+def printKey(key):
+        print("Key pressed:")
+        print(key)
+
 class NumpadRaetsel(beat_the_room.Puzzle):   
     def printKey(self,key):
         print("Key pressed:")
@@ -37,7 +41,7 @@ class NumpadRaetsel(beat_the_room.Puzzle):
         #self.keypad = self.factory.create_keypad(keypad=self.matrix, row_pins=self.zeile, col_pins=self.spalte)
         self.keypad = self.factory.create_4_by_4_keypad()
         
-        self.keypad.registerKeyPressHandler(self.printKey)
+        self.keypad.registerKeyPressHandler(printKey)
 
         self.password = ["4", "0", "2", "8"]
         print("End init Numpad")
