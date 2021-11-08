@@ -1,7 +1,7 @@
 import beat_the_room
+from pad4pi import rpi_gpio
 import RPi.GPIO as gpio
 import time
-
 
 class NumpadRaetsel(beat_the_room.Puzzle):
 
@@ -12,11 +12,18 @@ class NumpadRaetsel(beat_the_room.Puzzle):
         self.zeile = [1, 7, 8, 16]
         self.spalte = [24, 6, 15, 13]
         
-        self.matrix = [["1","2","3", "A"],
-          ["4","5","6", "B"],
-          ["7","8","9", "C"],
-          ["*", "0", "#", "D"]]
+        # Keypad
+        self.matrix = [
+            ["1","2","3","A"],
+            ["4","5","6","B"],
+            ["7","8","9","C"],
+            ["*","0","#","D"]
+        ]
 
+        self.factory = rpi_gpio.KeypadFactory()
+        self.keypad = factory.create_keypad(keypad=self.matrix, row_pins=self.zeile, col_pins=self.spalte)
+        
+        self.keypad.registerKeyPressHandler(printKey)
 
         self.password = ["4", "0", "2", "8"]
 
@@ -54,11 +61,14 @@ class NumpadRaetsel(beat_the_room.Puzzle):
     def interact(self):
         lastInputList = []
         while not self.solved:
+            time.sleep(0.2)
+            """
             if lastInputList[-4:] != self.password:
                 number = self.readKeypad()
                 lastInputList.append(number)
                 print("Hier")
                 print(lastInputList)
+            """
             else:
                 self.solved = True
 
