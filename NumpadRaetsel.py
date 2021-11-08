@@ -16,8 +16,8 @@ class NumpadRaetsel(beat_the_room.Puzzle):
         print("Init Numpad")
         gpio.cleanup()
         
-        self.zeile = [27, 11, 10, 26]
-        self.spalte = [5, 22, 16, 15]
+        self.zeile = [16, 7, 8, 12]
+        self.spalte = [24, 6, 15, 14]
 
         gpio.setmode(gpio.BCM)
         gpio.setwarnings(False)
