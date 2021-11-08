@@ -16,7 +16,7 @@ class NumpadRaetsel(beat_the_room.Puzzle):
         for j in range(4):
             gpio.setup(self.spalte[j], gpio.OUT)
             gpio.setup(self.zeile[j],gpio.IN,
-                   pull_up_down=gpio.PUD_UP)
+                   pull_up_down=gpio.PUD_DOWN)
         
         # Keypad
         self.matrix = [
@@ -59,7 +59,12 @@ class NumpadRaetsel(beat_the_room.Puzzle):
             
               print("Taste")
               print(benutzerEingabe)
+              gpio.output(self.spalte[line], gpio.HIGH)
+          
               return benutzerEingabe
+          else: 
+              gpio.output(self.spalte[line], gpio.HIGH)
+          
       return False
 
     def interact(self):
