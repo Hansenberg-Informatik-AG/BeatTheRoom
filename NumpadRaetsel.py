@@ -14,7 +14,7 @@ class NumpadRaetsel(beat_the_room.Puzzle):
         gpio.setmode(gpio.BCM)
         gpio.setwarnings(False)
         
-         for j in range(4):
+        for j in range(4):
             gpio.setup(self.spalte[j], gpio.OUT)
             gpio.output(self.spalte[j], 1)
             gpio.setup(self.zeile[j],gpio.IN,
