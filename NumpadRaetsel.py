@@ -7,12 +7,19 @@ class NumpadRaetsel(beat_the_room.Puzzle):
 
     def init(self):
         gpio.cleanup()
+        
+        self.zeile = [27, 11, 10, 26]
+        self.spalte = [5, 22, 16, 15]
 
         gpio.setmode(gpio.BCM)
         gpio.setwarnings(False)
         
-        self.zeile = [27, 11, 10, 26]
-        self.spalte = [5, 22, 16, 15]
+         for j in range(4):
+            gpio.setup(self.spalte[j], gpio.OUT)
+            gpio.output(self.spalte[j], 1)
+            gpio.setup(self.zeile[j],gpio.IN,
+                   pull_up_down=gpio.PUD_UP)
+        print("Hi")
         
         # Keypad
         self.matrix = [
@@ -28,15 +35,6 @@ class NumpadRaetsel(beat_the_room.Puzzle):
         self.keypad.registerKeyPressHandler(self.printKey)
 
         self.password = ["4", "0", "2", "8"]
-
-        """
-        for j in range(4):
-            gpio.setup(self.spalte[j], gpio.OUT)
-            gpio.output(self.spalte[j], 1)
-            gpio.setup(self.zeile[j],gpio.IN,
-                   pull_up_down=gpio.PUD_UP)
-        print("Hi")
-        """
         
     def printKey(self,key):
         print(key)
