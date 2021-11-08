@@ -21,7 +21,7 @@ class NumpadRaetsel(beat_the_room.Puzzle):
         ]
 
         self.factory = rpi_gpio.KeypadFactory()
-        self.keypad = factory.create_keypad(keypad=self.matrix, row_pins=self.zeile, col_pins=self.spalte)
+        self.keypad = self.factory.create_keypad(keypad=self.matrix, row_pins=self.zeile, col_pins=self.spalte)
         
         self.keypad.registerKeyPressHandler(self.printKey)
 
