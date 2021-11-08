@@ -37,19 +37,19 @@ class NumpadRaetsel(beat_the_room.Puzzle):
           char = -1
           benutzerEingabe = -1
                 
-          if gpio.input(self.zeile[0]) == 0:
+          if gpio.input(self.zeile[0]) == 1:
               char = 0
               benutzerEingabe = characters[0]
             
-          if gpio.input(self.zeile[1]) == 0:
+          if gpio.input(self.zeile[1]) == 1:
               char = 1
               benutzerEingabe = characters[1]
             
-          if gpio.input(self.zeile[2]) == 0:
+          if gpio.input(self.zeile[2]) == 1:
               char = 2
               benutzerEingabe = characters[2]
             
-          if gpio.input(self.zeile[3]) == 0:
+          if gpio.input(self.zeile[3]) == 1:
               char = 3
               benutzerEingabe = characters[3]
               
