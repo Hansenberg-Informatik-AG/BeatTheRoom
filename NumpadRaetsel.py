@@ -23,7 +23,7 @@ class NumpadRaetsel(beat_the_room.Puzzle):
         self.factory = rpi_gpio.KeypadFactory()
         self.keypad = factory.create_keypad(keypad=self.matrix, row_pins=self.zeile, col_pins=self.spalte)
         
-        self.keypad.registerKeyPressHandler(printKey)
+        self.keypad.registerKeyPressHandler(self.printKey)
 
         self.password = ["4", "0", "2", "8"]
 
@@ -36,6 +36,9 @@ class NumpadRaetsel(beat_the_room.Puzzle):
             gpio.setup(self.zeile[j],gpio.IN,
                    pull_up_down=gpio.PUD_UP)
         print("Hi")
+        
+    def printKey(self,key):
+        print(key)
 
     def readKeypad(self):
       print("Schleife")
