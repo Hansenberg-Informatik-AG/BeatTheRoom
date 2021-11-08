@@ -10,7 +10,7 @@ class NumpadRaetsel(beat_the_room.Puzzle):
         print("Hi")
         
         self.zeile = [1, 7, 8, 16]
-        self.spalte = [24, 6, 15, 13]
+        self.spalte = [24, 6, 13, 15]
         
         self.matrix = [["1","2","3", "A"],
           ["4","5","6", "B"],
