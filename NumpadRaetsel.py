@@ -5,6 +5,7 @@ import time
 
 class NumpadRaetsel(beat_the_room.Puzzle):   
     def printKey(self,key):
+        print("Key pressed:")
         print(key)
 
     def init(self):
@@ -39,7 +40,7 @@ class NumpadRaetsel(beat_the_room.Puzzle):
         self.keypad.registerKeyPressHandler(self.printKey)
 
         self.password = ["4", "0", "2", "8"]
-        print("Init Numpad")
+        print("End init Numpad")
 
     def readKeypad(self):
       print("Schleife")
