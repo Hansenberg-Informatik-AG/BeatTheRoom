@@ -53,7 +53,7 @@ class NumpadRaetsel(beat_the_room.Puzzle):
               char = 3
               benutzerEingabe = charaters[3]
               
-          if (char != -1) 
+          if (char != -1):
               while gpio.input(self.zeile[char]) == 0:
                   pass
             
