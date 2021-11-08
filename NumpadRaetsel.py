@@ -8,6 +8,7 @@ class NumpadRaetsel(beat_the_room.Puzzle):
         print(key)
 
     def init(self):
+        print("Init Numpad")
         gpio.cleanup()
         
         self.zeile = [27, 11, 10, 26]
@@ -38,6 +39,7 @@ class NumpadRaetsel(beat_the_room.Puzzle):
         self.keypad.registerKeyPressHandler(self.printKey)
 
         self.password = ["4", "0", "2", "8"]
+        print("Init Numpad")
 
     def readKeypad(self):
       print("Schleife")
