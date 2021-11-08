@@ -59,11 +59,11 @@ class NumpadRaetsel(beat_the_room.Puzzle):
             
               print("Taste")
               print(benutzerEingabe)
-              gpio.output(self.spalte[line], gpio.HIGH)
+              gpio.output(self.spalte[line], gpio.LOW)
           
               return benutzerEingabe
           else: 
-              gpio.output(self.spalte[line], gpio.HIGH)
+              gpio.output(self.spalte[line], gpio.LOW)
           
       return False
 
