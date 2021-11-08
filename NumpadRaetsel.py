@@ -29,20 +29,18 @@ class NumpadRaetsel(beat_the_room.Puzzle):
         self.password = ["4", "0", "2", "8"]
         print("End init Numpad")
 
-    def readKeypad(self):
+    def readKeypad(self, line, characters):
       print("Schleife")
       while True:
-          for j in range(4):
-              gpio.output(self.spalte[j], gpio.HIGH)
-              for i in range(4):
-                  if gpio.input(self.zeile[i]) == 0:
-                      benutzerEingabe = self.matrix[i][j]
-                      print("Taste")
-                      print(benutzerEingabe)
-                      while gpio.input(self.zeile[i]) == 0:
-                          pass
-                      return benutzerEingabe
-              gpio.output(self.spalte[j], gpio.LOW)
+          gpio.output(self.spalte[j], gpio.HIGH)
+          
+          if gpio.input(self.zeile[0]) == 0:
+              benutzerEingabe = characters[0]
+              print("Taste")
+              print(benutzerEingabe)
+              while gpio.input(self.zeile[0]) == 0:
+                  pass
+              return benutzerEingabe
       return False
 
     def interact(self):
@@ -51,7 +49,7 @@ class NumpadRaetsel(beat_the_room.Puzzle):
             time.sleep(0.2)
             
             if lastInputList[-4:] != self.password:
-                number = self.readKeypad()
+                number = self.readKeypad(1, [1,2,3,"A"])
                 lastInputList.append(number)
                 print("Hier")
                 print(lastInputList)
