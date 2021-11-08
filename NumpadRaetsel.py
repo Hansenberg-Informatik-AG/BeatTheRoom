@@ -43,15 +43,15 @@ class NumpadRaetsel(beat_the_room.Puzzle):
             
           if gpio.input(self.zeile[1]) == 0:
               char = 1
-              benutzerEingabe = charaters[1]
+              benutzerEingabe = characters[1]
             
           if gpio.input(self.zeile[2]) == 0:
               char = 2
-              benutzerEingabe = charaters[2]
+              benutzerEingabe = characters[2]
             
           if gpio.input(self.zeile[3]) == 0:
               char = 3
-              benutzerEingabe = charaters[3]
+              benutzerEingabe = characters[3]
               
           if (char != -1):
               while gpio.input(self.zeile[char]) == 0:
