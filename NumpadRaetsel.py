@@ -32,14 +32,33 @@ class NumpadRaetsel(beat_the_room.Puzzle):
     def readKeypad(self, line, characters):
       print("Schleife")
       while True:
-          gpio.output(self.spalte[j], gpio.HIGH)
+          gpio.output(self.spalte[line], gpio.HIGH)
           
+          char = -1
+          benutzerEingabe = -1
+                
           if gpio.input(self.zeile[0]) == 0:
+              char = 0
               benutzerEingabe = characters[0]
+            
+          if gpio.input(self.zeile[1]) == 0:
+              char = 1
+              benutzerEingabe = charaters[1]
+            
+          if gpio.input(self.zeile[2]) == 0:
+              char = 2
+              benutzerEingabe = charaters[2]
+            
+          if gpio.input(self.zeile[3]) == 0:
+              char = 3
+              benutzerEingabe = charaters[3]
+              
+          if (char != -1) 
+              while gpio.input(self.zeile[char]) == 0:
+                  pass
+            
               print("Taste")
               print(benutzerEingabe)
-              while gpio.input(self.zeile[0]) == 0:
-                  pass
               return benutzerEingabe
       return False
 
