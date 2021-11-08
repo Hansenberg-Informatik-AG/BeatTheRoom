@@ -11,7 +11,7 @@ class Klopfraetsel(beat_the_room.Puzzle):
         # die Rätsel sind linear
         self.hints = [beat_the_room.make_hint(
             self, "test.avi"), beat_the_room.make_hint(self, "hinweis2.avi")]
-        print("Init(15)")
+        print("Init(16)")
         # INITIALISIERE SENSOREN / HARDWARE
         global GPIO_PIN
         
@@ -20,6 +20,8 @@ class Klopfraetsel(beat_the_room.Puzzle):
         self.lastKnock = 0
         self.counter = 0
         self.anfang = 0
+        self.fehlerStatus = True
+        self.fehlerTime = 0
         
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(GPIO_PIN, GPIO.IN)
@@ -36,7 +38,13 @@ class Klopfraetsel(beat_the_room.Puzzle):
             print(e)
             GPIO.cleanup()
             exit(-1)
-
+    def fehler(self, message):
+        print("---> Es kam zu einem unerwartetem Fehler <---")
+        print("Fehlermeldung: " + message)
+        self.fehlerStatus = True
+        self.fehlerTime = time.time()
+        self.counter = 0
+        
     def lösen(self, value):
         if self.solved == True:
             return 0
@@ -47,20 +55,25 @@ class Klopfraetsel(beat_the_room.Puzzle):
         print ("Time:      " + str(time.time() - self.anfang))
         print ("lastKnock: " + str(time.time() - self.lastKnock))
         
+        #print("----" + time.time() - self.lastKnock + "----")
+        if (self.fehlerStatus and time.time()-self.fehlerTime < 0.3):
+            return 0
+        
         if (time.time() - self.lastKnock < 0.1):
             print("-----to short on previous knock-----")
+            return 0
         
-        if (time.time() - self.lastKnock < 1 and self.counter % 3 == 0 and self.counter != 0):
-            print("MAY NOT KNOCK")
-            self.counter = 0
+        if (time.time() - self.lastKnock < 0.3 and self.counter % 3 == 0 and self.counter != 0):
+            self.fehler("kein Klopfen")
             return 0 # only if the knock should not count as "first knock" of the next try
         
-        if (time.time() - self.lastKnock > 1 and self.counter % 3 != 0 and self.counter != 0):
-            self.counter = 0
-            print("too long")
+        if (time.time() - self.lastKnock > 2 and self.counter % 3 != 0 and self.counter != 0):
+            self.fehler("zu lange gewartet")
             return 0 # only if the knock should not count as "first knock" of the next try
         
         self.lastKnock = time.time()
+        self.fehlerStatus = False
+        self.fehlerTime = 0
         
         try:
             self.counter +=1
