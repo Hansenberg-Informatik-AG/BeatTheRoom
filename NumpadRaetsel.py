@@ -68,10 +68,10 @@ class NumpadRaetsel(beat_the_room.Puzzle):
                 lastInputList.append(number)
                 print("Hier")
                 print(lastInputList)
-            """
+            
             else:
                 self.solved = True
-
+        """
     def deinit(self):
         pass
 
