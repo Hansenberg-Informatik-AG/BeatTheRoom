@@ -70,7 +70,7 @@ class NumpadRaetsel(beat_the_room.Puzzle):
     def interact(self):
         lastInputList = []
         while not self.solved:
-            time.sleep(0.2)
+            time.sleep(0.1)
             
             if lastInputList[-4:] != self.password:
                 for i in range(4):
