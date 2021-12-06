@@ -54,8 +54,8 @@ class NumpadRaetsel(beat_the_room.Puzzle):
               benutzerEingabe = characters[3]
               
           if (char != -1):
-              while gpio.input(self.zeile[char]) == 0:
-                  pass
+              # while gpio.input(self.zeile[char]) == 0:
+              #     pass
             
               print("Taste")
               print(benutzerEingabe)
