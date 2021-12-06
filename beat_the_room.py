@@ -17,7 +17,7 @@ class Controller(object):
         import NumpadRaetsel
         # puzlle hier Importieren und zu der Liste hinzufuegen
 # die Reihenfolge hier ist auch die Reihenfolge der Puzzle!
-        #self.puzzles.append(NumpadRaetsel.NumpadRaetsel())
+        self.puzzles.append(NumpadRaetsel.NumpadRaetsel()) # TODO: nach unten schieben
         self.puzzles.append(SchluessekRaetsel.SchluesselRaetsel())
         self.puzzles.append(KameraRaetsel.KameraRaetsel())
         self.puzzles.append(Klopfraetsel.Klopfraetsel())
