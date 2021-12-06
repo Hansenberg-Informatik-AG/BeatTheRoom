@@ -38,7 +38,7 @@ class NumpadRaetsel(beat_the_room.Puzzle):
           benutzerEingabe = -1
           
           for j in range(4):
-              if (gpio.input(self.zeile[j] == 1): 
+              if (gpio.input(self.zeile[j]) == 1): 
                   print("Input " + str(j) + str(gpio.input(self.zeile[j])))
           print("-------------------------------------------------------")
                 
