@@ -3,6 +3,7 @@ import beat_the_room
 import RPi.GPIO as GPIO
 import time
 
+print("dummer hurensohn")
 
 class TasterRaetsel(beat_the_room.Puzzle):
 
