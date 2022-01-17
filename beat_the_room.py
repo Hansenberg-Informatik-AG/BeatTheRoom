@@ -17,13 +17,13 @@ class Controller(object):
         import NumpadRaetsel
         # puzlle hier Importieren und zu der Liste hinzufuegen
 # die Reihenfolge hier ist auch die Reihenfolge der Puzzle!
-        self.puzzles.append(NumpadRaetsel.NumpadRaetsel()) # TODO: nach unten schieben
+        #self.puzzles.append(NumpadRaetsel.NumpadRaetsel()) # TODO: nach unten schieben
         self.puzzles.append(SchluessekRaetsel.SchluesselRaetsel())
+        self.puzzles.append(TasterRaetsel.TasterRaetsel())
         self.puzzles.append(KameraRaetsel.KameraRaetsel())
         self.puzzles.append(Klopfraetsel.Klopfraetsel())
         #self.puzzles.append(Puzzle1.Puzzle1())
         #self.puzzles.append(RadioRaetsel.RadioRaetsel())
-        self.puzzles.append(TasterRaetsel.TasterRaetsel())
         self.hint_queue = []
         self.run_thread = Thread(target=self.run_func)
 
