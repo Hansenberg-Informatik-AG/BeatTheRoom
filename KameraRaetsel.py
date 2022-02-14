@@ -56,3 +56,5 @@ class KameraRaetsel(Puzzle):
     def deinit(self):
         camera.stop_preview()
         # Port speziefizieren???
+        p = vlc.MediaPlayer("BeatTheRoom/Audio_und_Videodateien/3.Kamera-Deaktiviert.mp3")
+        p.play()
