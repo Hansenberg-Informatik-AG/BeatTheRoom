@@ -2,6 +2,7 @@ import time
 import beat_the_room
 import os
 import RPi.GPIO as GPIO
+import vlc
 
 # information zu Alarmanlage, korrekte berechnung des Widerstands, nutzung des URI-Gesetzes (Jonathan Doll fragen)
 # Wir wollen, dass I konstant ist --> U und R anpassen
@@ -26,7 +27,9 @@ class SchluesselRaetsel(beat_the_room.Puzzle):
     def interact(self):
         anfang = GPIO.input(21)
         # sobald diese variable gesetzt ist, ist das Rätsel fertig! Hier muss wahrscheinlich immer eine while Schleife rein!
+        p = vlc.MediaPlayer("BeatTheRoom/Audio_und_Videodateien/1.Alarm-Notversorgung-in-Gefahr.mp3")
         while not self.solved:
+            p.play()
             self.solved = GPIO.input(21) != anfang
 
     def deinit(self):
