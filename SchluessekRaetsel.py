@@ -36,3 +36,5 @@ class SchluesselRaetsel(beat_the_room.Puzzle):
         print("deinitlasing(42)")
         os.system("tvservice -p")
         #GPIO.cleanup()
+        p = vlc.MediaPlayer("BeatTheRoom/Audio_und_Videodateien/2.Kamera-Aktiviert.mp3")
+        p.play()
