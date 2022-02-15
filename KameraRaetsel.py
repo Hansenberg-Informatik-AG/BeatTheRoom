@@ -3,7 +3,7 @@ import RPi.GPIO as GPIO
 import time
 from picamera import PiCamera
 from PIL import Image
-
+import vlc
 
 class KameraRaetsel(Puzzle):
     def init(self):
