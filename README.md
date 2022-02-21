@@ -1,12 +1,12 @@
 # Beat the room
 
-##aktuelle Story
+## aktuelle Story
 
-###Grobe Storyline:
+### Grobe Storyline:
 -	Stanley beschützt etwas (Süßigkeiten/ Snacks als Dopingmittel für Höchstleistungen) -> in Schublade
 
 
-###Detailliertere Storyline
+### Detailliertere Storyline
 
 1.	Tag der offenen Tür am Hansenberg
 -	Allein im Raum mit Stanley ohne Zitzewitz (Schlüssel wird in die Hand gedrückt)
