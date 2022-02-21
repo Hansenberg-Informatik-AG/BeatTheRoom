@@ -1,12 +1,66 @@
 # Beat the room
 
-## Ziel bis zu den Sommerferien:
-### Funktionierende Testversion mit allen benötigten Rätseln
-- Grundgerüst des Programm steht
+##aktuelle Story
 
-#### nach den Ferien: 
-- Verfeinerung, Optimierung des Programms
-- Storyumsetzung (Videos & Audios)
+###Grobe Storyline:
+-	Stanley beschützt etwas (Süßigkeiten/ Snacks als Dopingmittel für Höchstleistungen) -> in Schublade
+
+
+###Detailliertere Storyline
+
+1.	Tag der offenen Tür am Hansenberg
+-	Allein im Raum mit Stanley ohne Zitzewitz (Schlüssel wird in die Hand gedrückt)
+-	Sirene geht an: „Alarm, Alarm! Geheime Notversorgung der Hansenberger in Gefahr! Alarm, Alarm!“
+-	Irgendwann wird Schlüssel gedreht -> Sirene geht aus
+
+2.	Kamerarätsel
+-	Schlüssel wird gedreht -> Kamera geht an
+-	„Notstromversorgung zur Verteidigung wurde aktiviert! Die Videoaufzeichnung wurde gestartet! Gesichtserkennung und automatische Speicherung aktiviert!“
+-	Kamera muss zugehalten werden -> Kamera wird deaktiviert
+-	„Überwachung und visuelles Tracking gestoppt.“
+
+3.	Notfallmodus muss durch Passwort entschärft werden
+a.	Modus „Passwort vergessen“ -> Passwort wiederherstellen:
+•	1. Authentifizierung
+•	Passwort kann mit Zahlencode wiederhergestellt werden
+•	Hinweis: Zitzewitz persönlicher Radiosender gibt Auskunft zu Zahlencodes
+b.	Radiorätsel
+•	Utensilien: Taschenlampe, Papier & Radio
+1.	(Evtl. Taschenlampe in Schlüsselfach einschließen)
+•	Auf bestimmter Frequenz ein Matherätsel in Endlosschleife laufen lassen -> ergibt Zahlencodes als Lösung
+•	Zahlencode über Klicker eingeben
+c.	„Authentifizierung als Frau von Zitzewitz geglückt!“
+•	Normalerweise: neues Passwort eingeben und dann Notfallmodus ausschalten
+•	ABER: „Frau Zitzewitz vergisst nichts und erst recht keine Passwörter!! Hallo Schüler^^! Die höchste Alarmstufe wurde aktiviert: ein Angriff auf Stanley wurde registriert.“
+•	Statt zurückgeleitet zu werden zu neuer Ebene? -> Adminmodus (IT-Rechnung - Umbrella)
+
+4.	„Geben Sie das Passwort für den Adminmodus ein, um den Notfallmodus und die höchste Alarmstufe zu beenden!!“
+a.	Modus: Sicherheitsfrage
+•	„Beantworten Sie dafür die Sicherheitsfrage: Was ist das geheime Dopingmittel, mit dem Hansenberger/alte Jahrgänge Höchstleistungen vollbringen?“
+b.	Hinweis: Es befindet sich in der Schublade von Stanley.
+•	„Es ist im Inneren von Stanley verborgen!“
+•	Hinweis mit Umbrella-Rätsel erarbeiten (nicht zwingend nötig um Schublade zu öffnen)
+•	
+c.	Screenshot (wird auf dem Display angezeigt) von Internet-Browser mit witzigem Suchbegriff -> oben IP-Adresse zu unserer Webseite 
+
+5.	Schublade öffnen
+a.	Website
+•	Video von “The Big Bang Theory” mit Knock, Knock, Knock
+•	Zusätzlicher Hinweis auf Klopfrätsel? “Erst anklopfen und dann aufmachen!“
+b.	Klopfrätsel
+•	Schublade öffnet sich, wenn klopfen richtig
+
+6.	Inhalt der Schublade
+a.	Ein Wort = Inhalt der Schublade
+•	Muss in Zahlen kodiert werden
+•	Zahlen über Klicker eingeben
+b.	„Notfallmodus ist beendet“
+
+7.	Abschiedsvideo?
+
+------
+#
+#
 
 #### HINWEISE ZUR INSTALLATION:
 Use `pip3` for installing python Software instead of `pip`
