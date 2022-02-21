@@ -20,11 +20,11 @@
 -	„Überwachung und visuelles Tracking gestoppt.“
 
 3.	Notfallmodus muss durch Passwort entschärft werden
-a.	Modus „Passwort vergessen“ -> Passwort wiederherstellen:
+a    Modus „Passwort vergessen“ -> Passwort wiederherstellen:
 -    1. Authentifizierung
 -    Passwort kann mit Zahlencode wiederhergestellt werden
 -    Hinweis: Zitzewitz persönlicher Radiosender gibt Auskunft zu Zahlencodes
-b.	Radiorätsel
+b    Radiorätsel
 -    Utensilien: Taschenlampe, Papier & Radio
 1.	(Evtl. Taschenlampe in Schlüsselfach einschließen)
 -    Auf bestimmter Frequenz ein Matherätsel in Endlosschleife laufen lassen -> ergibt Zahlencodes als Lösung
